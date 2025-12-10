@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gold-400: #E5C558;
+    --color-gold-500: #D4AF37;
+}
+
+/* Default dark mode styles */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: var(--font-lato), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-playfair), serif;
+}

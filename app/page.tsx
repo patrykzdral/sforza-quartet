@@ -1,0 +1,137 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Section from "@/components/Section";
+import Footer from "@/components/Footer";
+import { MoveRight } from "lucide-react";
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <main className="bg-black min-h-screen">
+      <Navbar />
+      <Hero />
+
+      {/* O nas */}
+      <Section id="about" dark>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <h3 className="text-gold-500 uppercase tracking-widest text-sm">O nas</h3>
+            <h2 className="text-4xl md:text-5xl font-serif leading-tight">
+              Muzyka z Duszą i <br />
+              <span className="italic text-neutral-400">Perfekcją Wykonania</span>.
+            </h2>
+            <p className="text-lg text-gray-400 font-light leading-relaxed">
+              Sforza Quartet to zespół stworzony z pasji do muzyki kameralnej.
+              Łączymy klasyczną elegancję z nowoczesnym podejściem do repertuaru,
+              tworząc niezapomnianą oprawę muzyczną dla najważniejszych chwil w Twoim życiu.
+            </p>
+            <p className="text-lg text-gray-400 font-light leading-relaxed">
+              Nasze doświadczenie sceniczne i bogaty repertuar pozwalają nam dopasować się
+              do charakteru każdego wydarzenia — od kameralnych ślubów po wystawne bankiety.
+            </p>
+          </div>
+          <div className="relative aspect-[723/1024] w-full overflow-hidden rounded-sm bg-neutral-900">
+            <Image
+              src="/images/quartet.jpg"
+              alt="Sforza Quartet Musicians"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Oferta */}
+      <Section id="offer">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h3 className="text-gold-500 uppercase tracking-widest text-sm mb-4">Oferta</h3>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6">Na Każdą Okazję</h2>
+          <p className="text-gray-400 font-light text-lg">
+            Oferujemy profesjonalną oprawę muzyczną, która nada Twojemu wydarzeniu
+            wyjątkowy prestiż i atmosferę.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Śluby",
+              description: "Ceremonie kościelne, cywilne i plenerowe. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.",
+            },
+            {
+              title: "Bankiety",
+              description: "Eleganckie tło muzyczne dla wydarzeń firmowych, wernisaży i kolacji biznesowych.",
+            },
+            {
+              title: "Koncerty",
+              description: "Pełnowymiarowe występy artystyczne, od klasyki po aranżacje muzyki rozrywkowej.",
+            },
+          ].map((item, index) => (
+            <div key={index} className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40">
+              <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">{item.title}</h4>
+              <p className="text-gray-400 font-light leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Repertuar Call to Action */}
+      <Section id="repertoire" dark className="border-t border-neutral-900">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+          <div className="max-w-2xl">
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">Nasz Repertuar</h2>
+            <p className="text-xl text-gray-400 font-light">
+              Od Bacha i Mozarta, przez muzykę filmową, aż po współczesne przeboje pop i rock w smyczkowych aranżacjach.
+              Wierzymy, że muzyka nie ma granic.
+            </p>
+          </div>
+          <a
+            href="#contact"
+            className="group flex items-center gap-4 text-gold-400 text-lg tracking-widest uppercase hover:text-white transition-colors"
+          >
+            Zobacz pełną listę <MoveRight className="group-hover:translate-x-2 transition-transform" />
+          </a>
+        </div>
+      </Section>
+
+      {/* Kontakt */}
+      <Section id="contact">
+        <div className="grid md:grid-cols-2 gap-16">
+          <div>
+            <h3 className="text-gold-500 uppercase tracking-widest text-sm mb-4">Kontakt</h3>
+            <h2 className="text-5xl md:text-7xl font-serif mb-8 text-balance">
+              Zagrajmy razem.
+            </h2>
+            <p className="text-gray-400 text-lg font-light mb-8 max-w-md">
+              Jeśli planujesz wydarzenie i szukasz wyjątkowej oprawy muzycznej, napisz do nas.
+              Chętnie odpowiemy na wszystkie pytania.
+            </p>
+          </div>
+          <div className="bg-neutral-900/50 p-8 md:p-12 border border-neutral-800">
+            <form className="space-y-6">
+              <div>
+                <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">Imię i Nazwisko</label>
+                <input type="text" className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" />
+              </div>
+              <div>
+                <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">Email</label>
+                <input type="email" className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" />
+              </div>
+              <div>
+                <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">Wiadomość</label>
+                <textarea rows={4} className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors"></textarea>
+              </div>
+              <button type="submit" className="w-full bg-white text-black py-4 font-serif text-lg hover:bg-gold-500 hover:text-white transition-colors duration-300">
+                Wyślij wiadomość
+              </button>
+            </form>
+          </div>
+        </div>
+      </Section>
+
+      <Footer />
+    </main>
+  );
+}
