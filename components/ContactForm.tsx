@@ -10,6 +10,7 @@ registerLocale("pl", pl);
 interface FormData {
     name: string;
     email: string;
+    phone: string;
     eventDate: Date | null;
     eventLocation: string;
     message: string;
@@ -21,6 +22,7 @@ export default function ContactForm() {
     const [formData, setFormData] = useState<FormData>({
         name: "",
         email: "",
+        phone: "",
         eventDate: null,
         eventLocation: "",
         message: "",
@@ -52,7 +54,7 @@ export default function ContactForm() {
             }
 
             setStatus("success");
-            setFormData({ name: "", email: "", eventDate: null, eventLocation: "", message: "" });
+            setFormData({ name: "", email: "", phone: "", eventDate: null, eventLocation: "", message: "" });
         } catch (error) {
             setStatus("error");
             setErrorMessage(
@@ -114,6 +116,21 @@ export default function ContactForm() {
                         onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
                         }
+                        className={inputClassName}
+                        disabled={status === "loading"}
+                    />
+                </div>
+                <div>
+                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                        Numer telefonu
+                    </label>
+                    <input
+                        type="tel"
+                        value={formData.phone}
+                        onChange={(e) =>
+                            setFormData({ ...formData, phone: e.target.value })
+                        }
+                        placeholder="np. +48 123 456 789"
                         className={inputClassName}
                         disabled={status === "loading"}
                     />
