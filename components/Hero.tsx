@@ -12,7 +12,7 @@ export default function Hero() {
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                 >
                     <source src="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/intro.mp4" type="video/mp4" />
                 </video>
