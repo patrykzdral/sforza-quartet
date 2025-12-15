@@ -27,7 +27,7 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.5 }}
                 >
                     <h2 className="text-gold-500 tracking-[0.3em] text-sm md:text-base mb-6 uppercase">
-                        String Quartet
+                        Kwartet smyczkowy
                     </h2>
                     <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif text-white mb-8 tracking-tight">
                         Sforza Quartet

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { ArrowLeft, Music, Church } from "lucide-react";
+import { ArrowLeft, Music, Church, Banknote } from "lucide-react";
 
 const ceremonyParts = [
     "Wejście do kościoła",
@@ -33,7 +33,7 @@ const pieces = [
     { composer: "A. Vivaldi", title: 'Largo z „Zimy" (Cztery pory roku)' },
 ];
 
-export default function RepertuarPage() {
+export default function ChurchWeddings() {
     return (
         <main className="bg-black min-h-screen">
             <Navbar />
@@ -46,15 +46,15 @@ export default function RepertuarPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <Link
-                            href="/#repertoire"
-                            className="inline-flex items-center gap-2 text-gold-500 hover:text-white transition-colors mb-8 text-sm uppercase tracking-widest"
+                        <a
+                            href="/#offer"
+                            className="relative z-10 inline-flex items-center justify-center gap-3 px-6 py-3 border border-gold-500 text-gold-500 font-medium uppercase tracking-widest hover:bg-gold-500 hover:text-black transition-colors rounded mb-8"
                         >
                             <ArrowLeft size={18} /> Powrót
-                        </Link>
+                        </a>
 
                         <h1 className="text-4xl md:text-6xl font-serif mb-6">
-                            Muzyka <span className="italic text-neutral-400">Ślubna</span>
+                            Śluby <span className="italic text-neutral-400">Kościelne</span>
                         </h1>
 
                         <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
@@ -172,6 +172,49 @@ export default function RepertuarPage() {
                 </div>
             </section>
 
+            {/* Pricing Section */}
+            <section className="py-20 px-6 md:px-12 bg-black border-t border-neutral-800">
+                <div className="container mx-auto max-w-5xl">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <div className="flex items-center gap-3 mb-8">
+                            <Banknote className="text-gold-500" size={28} />
+                            <h2 className="text-2xl md:text-3xl font-serif">Cennik</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-8">
+                            <div className="bg-neutral-900/50 border border-neutral-800 rounded-lg p-8">
+                                <h3 className="text-xl font-serif text-white mb-4">Ceremonia ślubna</h3>
+                                <p className="text-3xl md:text-4xl font-serif text-gold-500">
+                                    2400 zł <span className="text-lg text-gray-400">+ dojazd</span>
+                                </p>
+                            </div>
+
+                            <div className="bg-neutral-900/50 border border-neutral-800 rounded-lg p-8">
+                                <h3 className="text-xl font-serif text-white mb-4">Usługi dodatkowe</h3>
+                                <ul className="space-y-3">
+                                    <li className="flex justify-between items-center">
+                                        <span className="text-gold-500 font-medium">życzenia</span>
+                                        <span className="text-gray-400">wycena indywidualna*</span>
+                                    </li>
+                                    <li className="flex justify-between items-center">
+                                        <span className="text-gold-500 font-medium">obiad</span>
+                                        <span className="text-gray-400">wycena indywidualna*</span>
+                                    </li>
+                                </ul>
+                                <p className="text-sm text-gray-500 mt-6 italic">
+                                    *Stawka zależna od długości grania
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
             {/* Final Note */}
             <section className="py-16 px-6 md:px-12 bg-black border-t border-neutral-800">
                 <div className="container mx-auto max-w-5xl text-center">
@@ -185,12 +228,23 @@ export default function RepertuarPage() {
                             Z przyjemnością uwzględnimy również inne propozycje repertuarowe,
                             dopasowując muzykę do Państwa oczekiwań oraz charakteru ceremonii.
                         </p>
-                        <Link
-                            href="/#contact"
-                            className="inline-flex items-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
-                        >
-                            Skontaktuj się z nami
-                        </Link>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_s%CC%81lubna.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                download
+                                className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-gold-500 text-gold-500 font-medium uppercase tracking-widest hover:bg-gold-500 hover:text-black transition-colors rounded"
+                            >
+                                Pobierz ofertę ślubną (PDF)
+                            </a>
+                            <Link
+                                href="/#contact"
+                                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
+                            >
+                                Skontaktuj się z nami
+                            </Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>

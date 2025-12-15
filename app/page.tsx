@@ -48,63 +48,40 @@ export default function Home() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h3 className="text-gold-500 uppercase tracking-widest text-sm mb-4">Oferta</h3>
           <h2 className="text-4xl md:text-5xl font-serif mb-6">Na Każdą Okazję</h2>
-          <p className="text-gray-400 font-light text-lg">
+          <p className="text-gray-400 font-light text-lg mb-4">
             Oferujemy profesjonalną oprawę muzyczną, która nada Twojemu wydarzeniu
             wyjątkowy prestiż i atmosferę.
           </p>
+          <p className="text-neutral-500 text-sm italic">
+            Kliknij w kafelek, aby dowiedzieć się więcej →
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Śluby - with download link */}
-          <div className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
-            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Śluby</h4>
-            <p className="text-gray-400 font-light leading-relaxed mb-6 flex-grow">
-              Ceremonie kościelne, cywilne i plenerowe. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Śluby kościelne */}
+          <a href="/church-weddings" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Śluby kościelne</h4>
+            <p className="text-gray-400 font-light leading-relaxed flex-grow">
+              Oprawa muzyczna ceremonii kościelnych. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.
             </p>
-            <a
-              href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_s%CC%81lubna.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-              className="inline-block text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors mt-auto"
-            >
-              Pobierz ofertę ślubną (PDF) →
-            </a>
-          </div>
+          </a>
 
-          {/* Bankiety */}
-          <div className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
-            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Bankiety</h4>
-            <p className="text-gray-400 font-light leading-relaxed mb-6 flex-grow">
-              Eleganckie tło muzyczne dla wydarzeń firmowych, wernisaży i kolacji biznesowych.
+          {/* Ceremonie ślubne poza kościołem */}
+          <a href="/civil-weddings" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
+            <h4 className="text-2xl font-serif mb-2 group-hover:text-gold-500 transition-colors">Ceremonie ślubne poza kościołem</h4>
+            <p className="text-gold-500/70 text-sm mb-3">(śluby cywilne, plenerowe i humanistyczne)</p>
+            <p className="text-gray-400 font-light leading-relaxed flex-grow">
+              Elegancka oprawa muzyczna ceremonii w USC, plenerze i uroczystości humanistycznych.
             </p>
-            <a
-              href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_eventowa.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-              className="inline-block text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors mt-auto"
-            >
-              Pobierz ofertę eventową (PDF) →
-            </a>
-          </div>
+          </a>
 
-          {/* Koncerty */}
-          <div className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
-            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Koncerty</h4>
-            <p className="text-gray-400 font-light leading-relaxed mb-6 flex-grow">
-              Pełnowymiarowe występy artystyczne, od klasyki po aranżacje muzyki rozrywkowej.
+          {/* Imprezy okolicznościowe, bankiety, koncerty */}
+          <a href="/banquets-and-concerts" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Imprezy okolicznościowe, bankiety, koncerty</h4>
+            <p className="text-gray-400 font-light leading-relaxed flex-grow">
+              Oprawa muzyczna dla firm, korporacji i instytucji. Eleganckie tło dla wydarzeń firmowych, jubileuszy i konferencji.
             </p>
-            <a
-              href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_eventowa.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-              className="inline-block text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors mt-auto"
-            >
-              Pobierz ofertę eventową (PDF) →
-            </a>
-          </div>
+          </a>
         </div>
       </Section>
 
@@ -119,7 +96,7 @@ export default function Home() {
             </p>
           </div>
           <a
-            href="/repertuar"
+            href="/repertoire"
             className="group flex items-center gap-4 text-gold-400 text-lg tracking-widest uppercase hover:text-white transition-colors"
           >
             Zobacz pełną listę <MoveRight className="group-hover:translate-x-2 transition-transform" />
