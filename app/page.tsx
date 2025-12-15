@@ -119,7 +119,7 @@ export default function Home() {
             </p>
           </div>
           <a
-            href="#contact"
+            href="/repertuar"
             className="group flex items-center gap-4 text-gold-400 text-lg tracking-widest uppercase hover:text-white transition-colors"
           >
             Zobacz pełną listę <MoveRight className="group-hover:translate-x-2 transition-transform" />
