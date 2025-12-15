@@ -1,13 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState, useRef } from "react";
+import { Volume2, VolumeX } from "lucide-react";
 
 export default function Hero() {
+    const [isMuted, setIsMuted] = useState(true);
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    const toggleMute = () => {
+        if (videoRef.current) {
+            videoRef.current.muted = !videoRef.current.muted;
+            setIsMuted(videoRef.current.muted);
+        }
+    };
+
     return (
         <section className="relative h-screen w-full overflow-hidden bg-black">
             {/* Background Video/Image Placeholder */}
             <div className="absolute inset-0 opacity-40">
                 <video
+                    ref={videoRef}
                     autoPlay
                     loop
                     muted
@@ -47,6 +60,22 @@ export default function Hero() {
                 >
                     <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-gold-500 to-transparent opacity-50 animate-pulse" />
                 </motion.div>
+
+                {/* Audio Control Button */}
+                <motion.button
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 2 }}
+                    onClick={toggleMute}
+                    className="absolute bottom-8 right-8 p-3 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 text-white/70 hover:text-white hover:bg-black/50 transition-all duration-300 z-50 group"
+                    aria-label={isMuted ? "Unmute video" : "Mute video"}
+                >
+                    {isMuted ? (
+                        <VolumeX className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                    ) : (
+                        <Volume2 className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                    )}
+                </motion.button>
             </div>
         </section>
     );
