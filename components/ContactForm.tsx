@@ -1,8 +1,11 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import DatePicker from "react-datepicker";
+import DatePicker, { registerLocale } from "react-datepicker";
+import { pl } from "date-fns/locale/pl";
 import "react-datepicker/dist/react-datepicker.css";
+
+registerLocale("pl", pl);
 
 interface FormData {
     name: string;
@@ -130,6 +133,7 @@ export default function ContactForm() {
                         disabled={status === "loading"}
                         minDate={new Date()}
                         calendarClassName="dark-calendar"
+                        locale="pl"
                     />
                 </div>
                 <div>
