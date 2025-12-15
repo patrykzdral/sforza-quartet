@@ -19,13 +19,13 @@ export default function Home() {
           <div className="space-y-6">
             <h3 className="text-gold-500 uppercase tracking-widest text-sm">O nas</h3>
             <h2 className="text-4xl md:text-5xl font-serif leading-tight">
-              Muzyka z Duszą i <br />
+              Muzyka z Duszą i <br />
               <span className="italic text-neutral-400">Perfekcją Wykonania</span>.
             </h2>
             <p className="text-lg text-gray-400 font-light leading-relaxed">
-              Sforza Quartet to zespół stworzony z pasji do muzyki kameralnej.
-              Łączymy klasyczną elegancję z nowoczesnym podejściem do repertuaru,
-              tworząc niezapomnianą oprawę muzyczną dla najważniejszych chwil w Twoim życiu.
+              Sforza Quartet to zespół stworzony z pasji do muzyki kameralnej.
+              Łączymy klasyczną elegancję z nowoczesnym podejściem do repertuaru,
+              tworząc niezapomnianą oprawę muzyczną dla najważniejszych chwil w Twoim życiu.
             </p>
             <p className="text-lg text-gray-400 font-light leading-relaxed">
               Nasze doświadczenie sceniczne i bogaty repertuar pozwalają nam dopasować się
@@ -50,7 +50,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-serif mb-6">Na Każdą Okazję</h2>
           <p className="text-gray-400 font-light text-lg mb-4">
             Oferujemy profesjonalną oprawę muzyczną, która nada Twojemu wydarzeniu
-            wyjątkowy prestiż i atmosferę.
+            wyjątkowy prestiż i atmosferę.
           </p>
           <p className="text-neutral-500 text-sm italic">
             Kliknij w kafelek, aby dowiedzieć się więcej →
@@ -62,16 +62,16 @@ export default function Home() {
           <a href="/church-weddings" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
             <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Śluby kościelne</h4>
             <p className="text-gray-400 font-light leading-relaxed flex-grow">
-              Oprawa muzyczna ceremonii kościelnych. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.
+              Oprawa muzyczna ceremonii kościelnych. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.
             </p>
           </a>
 
           {/* Ceremonie ślubne poza kościołem */}
           <a href="/civil-weddings" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
             <h4 className="text-2xl font-serif mb-2 group-hover:text-gold-500 transition-colors">Ceremonie ślubne poza kościołem</h4>
-            <p className="text-gold-500/70 text-sm mb-3">(śluby cywilne, plenerowe i humanistyczne)</p>
+            <p className="text-gold-500/70 text-sm mb-3">(śluby cywilne, plenerowe i humanistyczne)</p>
             <p className="text-gray-400 font-light leading-relaxed flex-grow">
-              Elegancka oprawa muzyczna ceremonii w USC, plenerze i uroczystości humanistycznych.
+              Elegancka oprawa muzyczna ceremonii w USC, plenerze i uroczystości humanistycznych.
             </p>
           </a>
 
@@ -79,7 +79,7 @@ export default function Home() {
           <a href="/banquets-and-concerts" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
             <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Imprezy okolicznościowe, bankiety, koncerty</h4>
             <p className="text-gray-400 font-light leading-relaxed flex-grow">
-              Oprawa muzyczna dla firm, korporacji i instytucji. Eleganckie tło dla wydarzeń firmowych, jubileuszy i konferencji.
+              Oprawa muzyczna dla firm, korporacji i instytucji. Eleganckie tło dla wydarzeń firmowych, jubileuszy i konferencji.
             </p>
           </a>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Nasz Repertuar</h2>
             <p className="text-xl text-gray-400 font-light">
-              Od Bacha i Mozarta, przez muzykę filmową, aż po współczesne przeboje pop i rock w smyczkowych aranżacjach.
+              Od Bacha i Mozarta, przez muzykę filmową, aż po współczesne przeboje pop i rock w smyczkowych aranżacjach.
               Wierzymy, że muzyka nie ma granic.
             </p>
           </div>
@@ -113,7 +113,7 @@ export default function Home() {
               Zagrajmy razem.
             </h2>
             <p className="text-gray-400 text-lg font-light mb-8 max-w-md">
-              Jeśli planujesz wydarzenie i szukasz wyjątkowej oprawy muzycznej, napisz do nas.
+              Jeśli planujesz wydarzenie i szukasz wyjątkowej oprawy muzycznej, napisz do nas.
               Chętnie odpowiemy na wszystkie pytania.
             </p>
 

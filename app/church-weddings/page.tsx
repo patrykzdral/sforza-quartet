@@ -10,8 +10,8 @@ const ceremonyParts = [
     "Wejście do kościoła",
     "Ofiarowanie",
     "Komunia Święta",
-    "Podpisywanie dokumentów (w przypadku ślubu konkordatowego)",
-    "Wyjście z kościoła",
+    "Podpisywanie dokumentów (w przypadku ślubu konkordatowego)",
+    "Wyjście z kościoła",
 ];
 
 const pieces = [
@@ -26,7 +26,7 @@ const pieces = [
     { composer: "L. Cohen", title: "Hallelujah" },
     { composer: "C. Franck", title: "Panis Angelicus" },
     { composer: "W. A. Mozart", title: "Ave Verum Corpus" },
-    { composer: "E. Morricone", title: "Obój Gabriela (temat z filmu Misja)" },
+    { composer: "E. Morricone", title: "Obój Gabriela (temat z filmu Misja)" },
     { composer: "J. Pachelbel", title: "Kanon D-dur" },
     { composer: "R. Schumann", title: "Marzenie" },
     { composer: "G. Tartini", title: "Cantabile" },
@@ -58,8 +58,8 @@ export default function ChurchWeddings() {
                         </h1>
 
                         <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
-                            Ślub to wyjątkowy moment, pełen wzruszeń i symboliki. Delikatne, eleganckie
-                            brzmienie Sforza Quartet nada ceremonii niepowtarzalny charakter i w naturalny
+                            Ślub to wyjątkowy moment, pełen wzruszeń i symboliki. Delikatne, eleganckie
+                            brzmienie Sforza Quartet nada ceremonii niepowtarzalny charakter i w naturalny
                             sposób podkreśli podniosłość chwili. Muzyka wykonywana na żywo tworzy atmosferę,
                             którą Wasi goście zapamiętają na długo.
                         </p>
@@ -84,8 +84,8 @@ export default function ChurchWeddings() {
                             </div>
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
                                 Podczas Mszy Świętej możemy wykonać do 5 utworów. Repertuar dobieramy
-                                z poszanowaniem charakteru miejsca oraz zasad liturgii. Dzięki naszemu
-                                doświadczeniu chętnie doradzimy i pomożemy w wyborze muzyki odpowiedniej
+                                z poszanowaniem charakteru miejsca oraz zasad liturgii. Dzięki naszemu
+                                doświadczeniu chętnie doradzimy i pomożemy w wyborze muzyki odpowiedniej
                                 do poszczególnych momentów ceremonii.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed">
@@ -124,10 +124,10 @@ export default function ChurchWeddings() {
                         transition={{ duration: 0.8 }}
                         className="text-gray-400 font-light text-center max-w-3xl mx-auto"
                     >
-                        Jesteśmy otwarte na indywidualne propozycje repertuarowe, jednak w przypadku
+                        Jesteśmy otwarte na indywidualne propozycje repertuarowe, jednak w przypadku
                         odstępstw od standardowego przebiegu liturgii zazwyczaj konieczna jest wcześniejsza
-                        zgoda księdza prowadzącego ceremonię. Zawsze prosimy również o poinformowanie
-                        organisty o naszym udziale w uroczystości.
+                        zgoda księdza prowadzącego ceremonię. Zawsze prosimy również o poinformowanie
+                        organisty o naszym udziale w uroczystości.
                     </motion.p>
                 </div>
             </section>
@@ -225,7 +225,7 @@ export default function ChurchWeddings() {
                         transition={{ duration: 0.8 }}
                     >
                         <p className="text-xl text-gray-300 font-light max-w-3xl mx-auto mb-8">
-                            Z przyjemnością uwzględnimy również inne propozycje repertuarowe,
+                            Z przyjemnością uwzględnimy również inne propozycje repertuarowe,
                             dopasowując muzykę do Państwa oczekiwań oraz charakteru ceremonii.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -242,7 +242,7 @@ export default function ChurchWeddings() {
                                 href="/#contact"
                                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
                             >
-                                Skontaktuj się z nami
+                                Skontaktuj się z nami
                             </Link>
                         </div>
                     </motion.div>

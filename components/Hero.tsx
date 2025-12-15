@@ -46,9 +46,9 @@ export default function Hero() {
                         Sforza Quartet
                     </h1>
                     <p className="max-w-xl mx-auto text-gray-300 text-lg md:text-xl font-light leading-relaxed">
-                        Tworzymy wspomnienia zatrzymane w dźwiękach.
+                        Tworzymy wspomnienia zatrzymane w dźwiękach.
                         <br />
-                        Elegancja, pasja i perfekcja w każdej nucie.
+                        Elegancja, pasja i perfekcja w każdej nucie.
                     </p>
                 </motion.div>
 

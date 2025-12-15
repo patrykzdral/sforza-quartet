@@ -30,14 +30,14 @@ export default function CivilWeddings() {
                             Ceremonie ślubne <span className="italic text-neutral-400">poza kościołem</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gold-500 font-light mb-6">
-                            (śluby cywilne, plenerowe i humanistyczne)
+                            (śluby cywilne, plenerowe i humanistyczne)
                         </p>
 
                         <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
                             Oferujemy oprawę muzyczną <strong className="text-white">ceremonii ślubnych odbywających się poza kościołem</strong> –
-                            zarówno ślubów cywilnych w sali USC, jak i uroczystości plenerowych oraz ceremonii
+                            zarówno ślubów cywilnych w sali USC, jak i uroczystości plenerowych oraz ceremonii
                             humanistycznych. Subtelne brzmienie kwartetu smyczkowego tworzy elegancki, uroczysty
-                            klimat, który na długo pozostaje w pamięci Państwa oraz gości.
+                            klimat, który na długo pozostaje w pamięci Państwa oraz gości.
                         </p>
                     </motion.div>
                 </div>
@@ -60,12 +60,12 @@ export default function CivilWeddings() {
                             </div>
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
                                 Podczas samej ceremonii wykonujemy zazwyczaj <strong className="text-white">około 3 utworów</strong> –
-                                na rozpoczęcie uroczystości, w jej trakcie (np. podczas podpisywania dokumentów
+                                na rozpoczęcie uroczystości, w jej trakcie (np. podczas podpisywania dokumentów
                                 lub symbolicznego momentu ceremonii) oraz na zakończenie.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed">
                                 Istnieje również możliwość dodatkowej oprawy muzycznej <strong className="text-white">tuż przed rozpoczęciem ceremonii</strong>,
-                                a także <strong className="text-white">podczas składania życzeń</strong>, co pozwala stworzyć spójną i harmonijną całość.
+                                a także <strong className="text-white">podczas składania życzeń</strong>, co pozwala stworzyć spójną i harmonijną całość.
                             </p>
                         </div>
 
@@ -77,7 +77,7 @@ export default function CivilWeddings() {
                             <p className="text-gray-400 font-light leading-relaxed">
                                 Repertuar ustalamy <strong className="text-white">indywidualnie</strong>, zawsze uwzględniając
                                 charakter uroczystości oraz Państwa oczekiwania. Aktualna lista utworów dostępna
-                                jest na naszej stronie internetowej w zakładce <Link href="/repertuar" className="text-gold-500 hover:text-gold-400 italic">repertuar</Link> i
+                                jest na naszej stronie internetowej w zakładce <Link href="/repertuar" className="text-gold-500 hover:text-gold-400 italic">repertuar</Link> i
                                 jest na bieżąco aktualizowana.
                             </p>
                         </div>
@@ -99,14 +99,14 @@ export default function CivilWeddings() {
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
                                 Gramy akustycznie, dzięki czemu <strong className="text-white">nie wymagamy nagłośnienia</strong>.
                                 Jedynym warunkiem jest zapewnienie odpowiednich warunków dla naszych instrumentów —
-                                w przypadku opadów konieczne jest solidne zadaszenie.
+                                w przypadku opadów konieczne jest solidne zadaszenie.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
                                 Zawsze prosimy o wcześniejsze poinformowanie <strong className="text-white">osoby prowadzącej ceremonię</strong> o
                                 naszej obecności.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed">
-                                W razie pytań pozostajemy <strong className="text-white">do Państwa dyspozycji</strong> (zakładka <Link href="/#contact" className="text-gold-500 hover:text-gold-400 italic">kontakt</Link>).
+                                W razie pytań pozostajemy <strong className="text-white">do Państwa dyspozycji</strong> (zakładka <Link href="/#contact" className="text-gold-500 hover:text-gold-400 italic">kontakt</Link>).
                             </p>
                         </div>
                     </motion.div>
@@ -166,7 +166,7 @@ export default function CivilWeddings() {
                         transition={{ duration: 0.8 }}
                     >
                         <p className="text-xl text-gray-300 font-light max-w-3xl mx-auto mb-8">
-                            Z przyjemnością uwzględnimy również inne propozycje repertuarowe,
+                            Z przyjemnością uwzględnimy również inne propozycje repertuarowe,
                             dopasowując muzykę do Państwa oczekiwań oraz charakteru ceremonii.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -183,7 +183,7 @@ export default function CivilWeddings() {
                                 href="/#contact"
                                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
                             >
-                                Skontaktuj się z nami
+                                Skontaktuj się z nami
                             </Link>
                         </div>
                     </motion.div>

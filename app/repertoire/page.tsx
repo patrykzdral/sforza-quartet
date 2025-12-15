@@ -18,7 +18,7 @@ const weddingPieces = [
     { composer: "W.A. Mozart", title: "Ave Verum Corpus (komunia)" },
     { composer: "L. Cohen", title: "Hallelujah" },
     { composer: "G. F. Handel", title: "Largo" },
-    { composer: "E. Morricone", title: "Obój Gabriela (z filmu Misja)" },
+    { composer: "E. Morricone", title: "Obój Gabriela (z filmu Misja)" },
     { composer: "A. Vivaldi", title: "Cztery pory roku - Zima, 2 część koncertu - Largo" },
     { composer: "J. Pachelbel", title: "Canon" },
     { composer: "G. Tartini", title: "Cantabile" },
@@ -48,10 +48,10 @@ const entertainmentPieces = [
 ];
 
 const filmPieces = [
-    { composer: "Merry-Go-Round of Life", title: "z filmu Ruchomy Zamek Hauru" },
-    { composer: "Pretty Woman", title: "z filmu Pretty Woman" },
-    { composer: "Sting – Shape of My Heart", title: "z filmu Leon Zawodowiec" },
-    { composer: "C. Gardel – Por una cabeza", title: "m.in. z filmów Zapach kobiety, True Lies" },
+    { composer: "Merry-Go-Round of Life", title: "z filmu Ruchomy Zamek Hauru" },
+    { composer: "Pretty Woman", title: "z filmu Pretty Woman" },
+    { composer: "Sting – Shape of My Heart", title: "z filmu Leon Zawodowiec" },
+    { composer: "C. Gardel – Por una cabeza", title: "m.in. z filmów Zapach kobiety, True Lies" },
     { composer: "Give Me Everything", title: "instrumentalna aranżacja (serial Bridgerton)" },
 ];
 
@@ -80,7 +80,7 @@ export default function Repertoire() {
                         </h1>
 
                         <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
-                            Poniżej znajdą Państwo przykładowe utwory, które znajdują się w naszym repertuarze.
+                            Poniżej znajdą Państwo przykładowe utwory, które znajdują się w naszym repertuarze.
                         </p>
                     </motion.div>
                 </div>
@@ -265,7 +265,7 @@ export default function Repertoire() {
                                 href="/#contact"
                                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
                             >
-                                Skontaktuj się z nami
+                                Skontaktuj się z nami
                             </Link>
                         </div>
                     </motion.div>

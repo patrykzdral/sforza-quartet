@@ -87,7 +87,7 @@ export default function ContactForm() {
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                     <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
-                        Imię i Nazwisko <span className="text-red-500">*</span>
+                        Imię i Nazwisko <span className="text-red-500">*</span>
                     </label>
                     <input
                         type="text"

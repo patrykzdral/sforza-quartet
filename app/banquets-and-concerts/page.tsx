@@ -51,23 +51,23 @@ export default function BanquetsAndConcerts() {
                         <div className="bg-black/50 border border-neutral-800 rounded-lg p-8">
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
                                 Oferujemy oprawę muzyczną dla <strong className="text-white">firm, korporacji, instytucji oraz agencji artystycznych</strong>.
-                                Tworzymy subtelne i eleganckie tło dla wszelkiego rodzaju wydarzeń – od spotkań biznesowych,
-                                jubileuszy i konferencji, po przyjęcia okolicznościowe, również w plenerze.
+                                Tworzymy subtelne i eleganckie tło dla wszelkiego rodzaju wydarzeń – od spotkań biznesowych,
+                                jubileuszy i konferencji, po przyjęcia okolicznościowe, również w plenerze.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
-                                Dostosowujemy charakter muzyki do atmosfery wydarzenia, tak aby w pełni współgrała z jego przebiegiem.
-                                W zależności od Państwa oczekiwań możemy zapewnić delikatne tło muzyczne lub zagrać dedykowany koncert dla gości.
+                                Dostosowujemy charakter muzyki do atmosfery wydarzenia, tak aby w pełni współgrała z jego przebiegiem.
+                                W zależności od Państwa oczekiwań możemy zapewnić delikatne tło muzyczne lub zagrać dedykowany koncert dla gości.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
                                 Repertuar ustalamy <strong className="text-white">indywidualnie</strong>, zawsze biorąc pod uwagę charakter wydarzenia
-                                oraz Państwa oczekiwania. Dzięki temu muzyka idealnie współgra z atmosferą i dodaje wyjątkowego klimatu każdemu spotkaniu.
+                                oraz Państwa oczekiwania. Dzięki temu muzyka idealnie współgra z atmosferą i dodaje wyjątkowego klimatu każdemu spotkaniu.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed mb-6">
-                                Jesteśmy również <strong className="text-white">otwarci</strong> na Państwa propozycje repertuarowe i z przyjemnością
-                                dostosowujemy program do specyfiki wydarzenia, tak aby w pełni spełniał Państwa oczekiwania.
+                                Jesteśmy również <strong className="text-white">otwarci</strong> na Państwa propozycje repertuarowe i z przyjemnością
+                                dostosowujemy program do specyfiki wydarzenia, tak aby w pełni spełniał Państwa oczekiwania.
                             </p>
                             <p className="text-gray-400 font-light leading-relaxed">
-                                W razie pytań pozostajemy <strong className="text-white">do Państwa dyspozycji</strong> (zakładka <Link href="/#contact" className="text-gold-500 hover:text-gold-400 italic">kontakt</Link>).
+                                W razie pytań pozostajemy <strong className="text-white">do Państwa dyspozycji</strong> (zakładka <Link href="/#contact" className="text-gold-500 hover:text-gold-400 italic">kontakt</Link>).
                             </p>
                         </div>
                     </motion.div>
@@ -128,7 +128,7 @@ export default function BanquetsAndConcerts() {
                                 href="/#contact"
                                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
                             >
-                                Skontaktuj się z nami
+                                Skontaktuj się z nami
                             </Link>
                         </div>
                     </motion.div>
