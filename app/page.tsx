@@ -60,7 +60,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Śluby kościelne */}
           <a href="/church-weddings" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
-            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Śluby kościelne</h4>
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Śluby kościelne →</h4>
             <p className="text-gray-400 font-light leading-relaxed flex-grow">
               Oprawa muzyczna ceremonii kościelnych. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.
             </p>
@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* Ceremonie ślubne poza kościołem */}
           <a href="/civil-weddings" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
-            <h4 className="text-2xl font-serif mb-2 group-hover:text-gold-500 transition-colors">Ceremonie ślubne poza kościołem</h4>
+            <h4 className="text-2xl font-serif mb-2 group-hover:text-gold-500 transition-colors">Ceremonie ślubne poza kościołem →</h4>
             <p className="text-gold-500/70 text-sm mb-3">(śluby cywilne, plenerowe i humanistyczne)</p>
             <p className="text-gray-400 font-light leading-relaxed flex-grow">
               Elegancka oprawa muzyczna ceremonii w USC, plenerze i uroczystości humanistycznych.
@@ -77,7 +77,7 @@ export default function Home() {
 
           {/* Imprezy okolicznościowe, bankiety, koncerty */}
           <a href="/banquets-and-concerts" className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
-            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Imprezy okolicznościowe, bankiety, koncerty</h4>
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Imprezy okolicznościowe, bankiety, koncerty →</h4>
             <p className="text-gray-400 font-light leading-relaxed flex-grow">
               Oprawa muzyczna dla firm, korporacji i instytucji. Eleganckie tło dla wydarzeń firmowych, jubileuszy i konferencji.
             </p>
