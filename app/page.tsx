@@ -2,7 +2,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Footer from "@/components/Footer";
-import { MoveRight } from "lucide-react";
+import { MoveRight, Mail, Phone } from "lucide-react";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
           </div>
           <div className="relative aspect-[723/1024] w-full overflow-hidden rounded-sm bg-neutral-900">
             <Image
-              src="/images/quartet.jpg"
+              src="/images/quartet.svg"
               alt="Sforza Quartet Musicians"
               fill
               className="object-cover"
@@ -53,27 +54,56 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Śluby",
-              description: "Ceremonie kościelne, cywilne i plenerowe. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.",
-            },
-            {
-              title: "Bankiety",
-              description: "Eleganckie tło muzyczne dla wydarzeń firmowych, wernisaży i kolacji biznesowych.",
-            },
-            {
-              title: "Koncerty",
-              description: "Pełnowymiarowe występy artystyczne, od klasyki po aranżacje muzyki rozrywkowej.",
-            },
-          ].map((item, index) => (
-            <div key={index} className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40">
-              <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">{item.title}</h4>
-              <p className="text-gray-400 font-light leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          ))}
+          {/* Śluby - with download link */}
+          <div className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Śluby</h4>
+            <p className="text-gray-400 font-light leading-relaxed mb-6 flex-grow">
+              Ceremonie kościelne, cywilne i plenerowe. Tworzymy magiczny nastrój w najważniejszym dniu Waszego życia.
+            </p>
+            <a
+              href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_s%CC%81lubna.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-block text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors mt-auto"
+            >
+              Pobierz ofertę ślubną (PDF) →
+            </a>
+          </div>
+
+          {/* Bankiety */}
+          <div className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Bankiety</h4>
+            <p className="text-gray-400 font-light leading-relaxed mb-6 flex-grow">
+              Eleganckie tło muzyczne dla wydarzeń firmowych, wernisaży i kolacji biznesowych.
+            </p>
+            <a
+              href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_eventowa.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-block text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors mt-auto"
+            >
+              Pobierz ofertę eventową (PDF) →
+            </a>
+          </div>
+
+          {/* Koncerty */}
+          <div className="p-8 border border-neutral-800 hover:border-gold-500/50 transition-colors group bg-black/40 flex flex-col">
+            <h4 className="text-2xl font-serif mb-4 group-hover:text-gold-500 transition-colors">Koncerty</h4>
+            <p className="text-gray-400 font-light leading-relaxed mb-6 flex-grow">
+              Pełnowymiarowe występy artystyczne, od klasyki po aranżacje muzyki rozrywkowej.
+            </p>
+            <a
+              href="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/SQ_Oferta_eventowa.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-block text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors mt-auto"
+            >
+              Pobierz ofertę eventową (PDF) →
+            </a>
+          </div>
         </div>
       </Section>
 
@@ -108,6 +138,24 @@ export default function Home() {
               Jeśli planujesz wydarzenie i szukasz wyjątkowej oprawy muzycznej, napisz do nas.
               Chętnie odpowiemy na wszystkie pytania.
             </p>
+
+            {/* Contact Info */}
+            <div className="space-y-4">
+              <a href="tel:+48796338875" className="flex items-center gap-3 text-neutral-300 hover:text-gold-500 transition-colors">
+                <Phone size={20} /> +48 796 338 875
+              </a>
+              <a href="mailto:sforzaquartet@gmail.com" className="flex items-center gap-3 text-neutral-300 hover:text-gold-500 transition-colors">
+                <Mail size={20} /> sforzaquartet@gmail.com
+              </a>
+              <div className="flex gap-4 pt-2">
+                <a href="https://www.instagram.com/sforza_quartet/" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold-500 transition-colors">
+                  <FaInstagram size={24} />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61582079500417" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold-500 transition-colors">
+                  <FaFacebookF size={24} />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="bg-neutral-900/50 p-8 md:p-12 border border-neutral-800">
             <form className="space-y-6">
