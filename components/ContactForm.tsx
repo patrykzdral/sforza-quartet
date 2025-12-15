@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 interface FormData {
     name: string;
     email: string;
+    eventDate: Date | null;
+    eventLocation: string;
     message: string;
 }
 
@@ -14,6 +18,8 @@ export default function ContactForm() {
     const [formData, setFormData] = useState<FormData>({
         name: "",
         email: "",
+        eventDate: null,
+        eventLocation: "",
         message: "",
     });
     const [status, setStatus] = useState<FormStatus>("idle");
@@ -30,7 +36,10 @@ export default function ContactForm() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    ...formData,
+                    eventDate: formData.eventDate?.toLocaleDateString("pl-PL") || "",
+                }),
             });
 
             const data = await response.json();
@@ -40,7 +49,7 @@ export default function ContactForm() {
             }
 
             setStatus("success");
-            setFormData({ name: "", email: "", message: "" });
+            setFormData({ name: "", email: "", eventDate: null, eventLocation: "", message: "" });
         } catch (error) {
             setStatus("error");
             setErrorMessage(
@@ -71,12 +80,14 @@ export default function ContactForm() {
         );
     }
 
+    const inputClassName = "w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors";
+
     return (
         <div className="bg-neutral-900/50 p-8 md:p-12 border border-neutral-800">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                     <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
-                        Imię i Nazwisko
+                        Imię i Nazwisko <span className="text-red-500">*</span>
                     </label>
                     <input
                         type="text"
@@ -85,13 +96,13 @@ export default function ContactForm() {
                         onChange={(e) =>
                             setFormData({ ...formData, name: e.target.value })
                         }
-                        className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        className={inputClassName}
                         disabled={status === "loading"}
                     />
                 </div>
                 <div>
                     <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
-                        Email
+                        Email <span className="text-red-500">*</span>
                     </label>
                     <input
                         type="email"
@@ -100,7 +111,39 @@ export default function ContactForm() {
                         onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
                         }
-                        className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        className={inputClassName}
+                        disabled={status === "loading"}
+                    />
+                </div>
+                <div>
+                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                        Data wydarzenia
+                    </label>
+                    <DatePicker
+                        selected={formData.eventDate}
+                        onChange={(date) =>
+                            setFormData({ ...formData, eventDate: date })
+                        }
+                        dateFormat="dd.MM.yyyy"
+                        placeholderText="Wybierz datę"
+                        className={inputClassName}
+                        disabled={status === "loading"}
+                        minDate={new Date()}
+                        calendarClassName="dark-calendar"
+                    />
+                </div>
+                <div>
+                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                        Miejsce wydarzenia
+                    </label>
+                    <input
+                        type="text"
+                        value={formData.eventLocation}
+                        onChange={(e) =>
+                            setFormData({ ...formData, eventLocation: e.target.value })
+                        }
+                        placeholder="np. Kraków, Hotel Sheraton"
+                        className={inputClassName}
                         disabled={status === "loading"}
                     />
                 </div>
@@ -110,12 +153,11 @@ export default function ContactForm() {
                     </label>
                     <textarea
                         rows={4}
-                        required
                         value={formData.message}
                         onChange={(e) =>
                             setFormData({ ...formData, message: e.target.value })
                         }
-                        className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        className={inputClassName}
                         disabled={status === "loading"}
                     />
                 </div>

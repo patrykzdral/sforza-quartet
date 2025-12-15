@@ -3,12 +3,12 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
     try {
-        const { name, email, message } = await request.json();
+        const { name, email, eventDate, eventLocation, message } = await request.json();
 
-        // Validate input
-        if (!name || !email || !message) {
+        // Validate input - only name and email are required
+        if (!name || !email) {
             return NextResponse.json(
-                { error: "Wszystkie pola są wymagane" },
+                { error: "Imię i email są wymagane" },
                 { status: 400 }
             );
         }
@@ -32,17 +32,18 @@ export async function POST(request: Request) {
         <h2>Nowa wiadomość z formularza kontaktowego</h2>
         <p><strong>Imię i nazwisko:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Wiadomość:</strong></p>
-        <p>${message.replace(/\n/g, "<br>")}</p>
+        ${eventDate ? `<p><strong>Data wydarzenia:</strong> ${eventDate}</p>` : ""}
+        ${eventLocation ? `<p><strong>Miejsce wydarzenia:</strong> ${eventLocation}</p>` : ""}
+        ${message ? `<p><strong>Wiadomość:</strong></p><p>${message.replace(/\n/g, "<br>")}</p>` : ""}
       `,
             text: `
 Nowa wiadomość z formularza kontaktowego
 
 Imię i nazwisko: ${name}
 Email: ${email}
-
-Wiadomość:
-${message}
+${eventDate ? `Data wydarzenia: ${eventDate}` : ""}
+${eventLocation ? `Miejsce wydarzenia: ${eventLocation}` : ""}
+${message ? `\nWiadomość:\n${message}` : ""}
       `,
         };
 

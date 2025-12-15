@@ -20,3 +20,89 @@ h5,
 h6 {
     font-family: var(--font-playfair), serif;
 }
+
+/* React DatePicker dark theme */
+.react-datepicker-wrapper {
+    width: 100% !important;
+    display: block !important;
+}
+
+.react-datepicker__input-container {
+    width: 100% !important;
+    display: block !important;
+}
+
+.react-datepicker__input-container input {
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.react-datepicker {
+    background-color: #171717 !important;
+    border: 1px solid #404040 !important;
+    font-family: inherit !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.react-datepicker__header {
+    background-color: #262626 !important;
+    border-bottom: 1px solid #404040 !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding-top: 12px !important;
+}
+
+.react-datepicker__current-month {
+    color: #D4AF37 !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+}
+
+.react-datepicker__day-name {
+    color: #a3a3a3 !important;
+    font-weight: 500 !important;
+}
+
+.react-datepicker__day {
+    color: #fff !important;
+    border-radius: 50% !important;
+    transition: all 0.2s ease !important;
+}
+
+.react-datepicker__day:hover {
+    background-color: #D4AF37 !important;
+    color: #000 !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: #D4AF37 !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+.react-datepicker__day--today {
+    border: 1px solid #D4AF37 !important;
+    background-color: transparent !important;
+}
+
+.react-datepicker__day--disabled {
+    color: #525252 !important;
+}
+
+.react-datepicker__navigation {
+    top: 12px !important;
+}
+
+.react-datepicker__navigation-icon::before {
+    border-color: #D4AF37 !important;
+}
+
+.react-datepicker__triangle {
+    display: none;
+}
+
+.react-datepicker__month {
+    margin: 0.5rem !important;
+}
