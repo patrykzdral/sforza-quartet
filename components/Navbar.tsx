@@ -34,31 +34,31 @@ export default function Navbar() {
                 className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? "bg-black/90 backdrop-blur-md py-4" : "bg-transparent py-8"
                     }`}
             >
-                <div className="container mx-auto px-6 relative flex justify-between md:justify-center items-center">
-
-                    {/* Mobile Menu Toggle (Left on mobile) */}
-                    <button
-                        className="md:hidden text-white z-50 absolute left-6"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    >
-                        {isMobileMenuOpen ? <X /> : <Menu />}
-                    </button>
-
-                    {/* Left Links */}
-                    <div className="hidden md:flex items-center space-x-12 absolute left-6 lg:left-12">
-                        {leftLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className="text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
+                <div className="container mx-auto px-6 flex items-center">
+                    {/* Mobile: 3-column layout for proper centering */}
+                    {/* Left column - Menu button on mobile, links on desktop */}
+                    <div className="flex-1 flex justify-start">
+                        <button
+                            className="md:hidden text-white z-50"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            {isMobileMenuOpen ? <X /> : <Menu />}
+                        </button>
+                        <div className="hidden md:flex items-center space-x-12">
+                            {leftLinks.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
 
-                    {/* Centered SQ Logo */}
-                    <Link href="/" className="z-50 group flex flex-col items-center justify-center">
+                    {/* Center column - Logo (always centered) */}
+                    <Link href="/" className="z-50 group flex flex-col items-center justify-center flex-shrink-0">
                         <div className="relative font-serif text-5xl md:text-6xl text-gold-500 flex items-center justify-center h-16 w-16">
                             <span className="absolute transform translate-x-[-8px] group-hover:translate-x-[-12px] transition-transform duration-500">S</span>
                             <span className="absolute transform translate-x-[8px] group-hover:translate-x-[12px] transition-transform duration-500 z-10 text-white/90 mix-blend-overlay">Q</span>
@@ -66,17 +66,19 @@ export default function Navbar() {
                         <span className="text-[0.6rem] uppercase tracking-[0.3em] text-white/60 mt-1 hidden md:block group-hover:text-gold-500 transition-colors">Sforza Quartet</span>
                     </Link>
 
-                    {/* Right Links */}
-                    <div className="hidden md:flex items-center space-x-12 absolute right-6 lg:right-12">
-                        {rightLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className="text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
+                    {/* Right column - Links on desktop, empty space on mobile for balance */}
+                    <div className="flex-1 flex justify-end">
+                        <div className="hidden md:flex items-center space-x-12">
+                            {rightLinks.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </nav>
