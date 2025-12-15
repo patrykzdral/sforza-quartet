@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 import { MoveRight, Mail, Phone } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
@@ -157,25 +158,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-neutral-900/50 p-8 md:p-12 border border-neutral-800">
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">Imię i Nazwisko</label>
-                <input type="text" className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" />
-              </div>
-              <div>
-                <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">Email</label>
-                <input type="email" className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" />
-              </div>
-              <div>
-                <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">Wiadomość</label>
-                <textarea rows={4} className="w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors"></textarea>
-              </div>
-              <button type="submit" className="w-full bg-white text-black py-4 font-serif text-lg hover:bg-gold-500 hover:text-white transition-colors duration-300">
-                Wyślij wiadomość
-              </button>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </Section>
 

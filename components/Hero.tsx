@@ -14,7 +14,7 @@ export default function Hero() {
                     playsInline
                     className="w-full h-full object-cover object-center"
                 >
-                    <source src="https://pteii1sujfy8yxfh.public.blob.vercel-storage.com/intro.mp4" type="video/mp4" />
+                    <source src="/videos/intro.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black" />
             </div>
