@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
 export default function Hero() {
@@ -14,6 +14,16 @@ export default function Hero() {
             setIsMuted(videoRef.current.muted);
         }
     };
+
+    // Force video play on mount for Safari mobile
+    useEffect(() => {
+        const video = videoRef.current;
+        if (video) {
+            video.play().catch(() => {
+                // Autoplay was prevented, video will remain paused
+            });
+        }
+    }, []);
 
     return (
         <section className="relative h-screen w-full overflow-hidden bg-black">
