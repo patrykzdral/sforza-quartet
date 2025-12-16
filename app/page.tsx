@@ -17,19 +17,21 @@ export default function Home() {
       <Section id="about" dark>
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h3 className="text-gold-500 uppercase tracking-widest text-sm">O nas</h3>
-            <h2 className="text-4xl md:text-5xl font-serif leading-tight">
-              Muzyka z Duszą i <br />
-              <span className="italic text-neutral-400">Perfekcją Wykonania</span>.
-            </h2>
+            <h3 className="text-gold-500 uppercase tracking-widest text-3xl mb-6">O nas</h3>
             <p className="text-lg text-gray-400 font-light leading-relaxed">
-              Sforza Quartet to zespół stworzony z pasji do muzyki kameralnej.
-              Łączymy klasyczną elegancję z nowoczesnym podejściem do repertuaru,
-              tworząc niezapomnianą oprawę muzyczną dla najważniejszych chwil w Twoim życiu.
+              Jesteśmy zawodowymi muzykami, absolwentkami Akademii Muzycznej, dla których granie nie jest tylko zawodem, ale przede wszystkim życiem i&nbsp;pasją. Od lat występujemy na scenach, w&nbsp;salach koncertowych i&nbsp;podczas uroczystości, tworząc muzykę, która porusza i&nbsp;nadaje wydarzeniom wyjątkowy charakter.
             </p>
             <p className="text-lg text-gray-400 font-light leading-relaxed">
-              Nasze doświadczenie sceniczne i bogaty repertuar pozwalają nam dopasować się
-              do charakteru każdego wydarzenia — od kameralnych ślubów po wystawne bankiety.
+              Nazwa Sforza nie jest przypadkowa. Nawiązuje do królowej Polski, Bony Sforzy – kobiety silnej, odważnej i&nbsp;wrażliwej na sztukę. To właśnie ona przywiozła do Polski nowe idee i&nbsp;kulturę, nadając im wyjątkowego znaczenia. My także czerpiemy z&nbsp;tej symboliki – jesteśmy kobietami, które poprzez muzykę chcą wprowadzać piękno, siłę i&nbsp;emocje w&nbsp;chwile, które są dla Was najważniejsze.
+            </p>
+            <p className="text-lg text-gray-400 font-light leading-relaxed">
+              Sforza Quartet powstał z&nbsp;pragnienia, by dzielić się pięknem muzyki także poza estradą – w&nbsp;chwilach najbardziej osobistych i&nbsp;uroczystych. Dlatego gramy na ślubach, weselach, bankietach i&nbsp;spotkaniach, gdzie muzyka ma moc wzruszać, podkreślać nastrój i&nbsp;sprawiać, że te momenty zostają w&nbsp;pamięci na zawsze.
+            </p>
+            <p className="text-lg text-gray-400 font-light leading-relaxed">
+              Nasz repertuar obejmuje zarówno klasyczne dzieła mistrzów, jak i&nbsp;muzykę filmową oraz aranżacje współczesnych utworów. Zawsze dobieramy go tak, by najlepiej oddawał charakter wydarzenia.
+            </p>
+            <p className="text-lg text-gray-400 font-light leading-relaxed">
+              W&nbsp;Sforza Quartet stawiamy na profesjonalizm, elegancję i&nbsp;autentyczne emocje. Wierzymy, że muzyka, którą gramy, nie tylko tworzy wyjątkową atmosferę, ale też zostaje w&nbsp;sercach tych, którzy jej słuchają.
             </p>
           </div>
           <div className="relative aspect-[723/1024] w-full overflow-hidden rounded-sm bg-neutral-900">
@@ -46,8 +48,7 @@ export default function Home() {
       {/* Oferta */}
       <Section id="offer">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="text-gold-500 uppercase tracking-widest text-sm mb-4">Oferta</h3>
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Na Każdą Okazję</h2>
+          <h3 className="text-gold-500 uppercase tracking-widest text-3xl mb-6">Oferta</h3>
           <p className="text-gray-400 font-light text-lg mb-4">
             Oferujemy profesjonalną oprawę muzyczną, która nada Twojemu wydarzeniu
             wyjątkowy prestiż i atmosferę.
@@ -108,7 +109,7 @@ export default function Home() {
       <Section id="contact">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-gold-500 uppercase tracking-widest text-sm mb-4">Kontakt</h3>
+            <h3 className="text-gold-500 uppercase tracking-widest text-3xl mb-6">Kontakt</h3>
             <h2 className="text-5xl md:text-7xl font-serif mb-8 text-balance">
               Zagrajmy razem.
             </h2>
