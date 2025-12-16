@@ -43,6 +43,100 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {/* Meet the Musicians */}
+        <div className="mt-24">
+          <h4 className="text-gold-500 uppercase tracking-widest text-2xl mb-12 text-center">Poznaj nas</h4>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Agata Graczyk */}
+            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500">
+              <div className="flex flex-col sm:flex-row">
+                <div className="relative w-full sm:w-48 aspect-[3/4] sm:aspect-auto sm:min-h-[280px] flex-shrink-0 overflow-hidden">
+                  <Image
+                    src="/images/Agata_Graczyk.png"
+                    alt="Agata Graczyk"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+                </div>
+                <div className="p-6 flex flex-col justify-center">
+                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Graczyk</h5>
+                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Altowiolistka</span>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed">
+                    Altowiolistka, która z&nbsp;czasem zamieniła miejsce w&nbsp;środku orkiestry na podium dyrygenckie. Jako instrumentalistka koncertowała z&nbsp;orkiestrami symfonicznymi i&nbsp;kameralnymi. Dziś coraz częściej można ją spotkać z&nbsp;batutą w&nbsp;ręku – dyryguje orkiestrami filharmonii i&nbsp;oper w&nbsp;całej Polsce. Łączy wrażliwość altowiolistki z&nbsp;energią dyrygentki, wierząc, że dobra muzyka zaczyna się od uważnego słuchania – i&nbsp;siebie nawzajem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Agata Doszczak */}
+            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500">
+              <div className="flex flex-col sm:flex-row">
+                <div className="relative w-full sm:w-48 aspect-[3/4] sm:aspect-auto sm:min-h-[280px] flex-shrink-0 overflow-hidden">
+                  <Image
+                    src="/images/Agata_Doszczak.png"
+                    alt="Agata Doszczak"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+                </div>
+                <div className="p-6 flex flex-col justify-center">
+                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Doszczak</h5>
+                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Skrzypaczka</span>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed">
+                    Absolwentka Akademii Muzycznej im. Ignacego Jana Paderewskiego w&nbsp;Poznaniu. Laureatka licznych ogólnopolskich i&nbsp;międzynarodowych konkursów skrzypcowych m.in. Golden Classical Music Awards w&nbsp;Nowym Jorku. Aktywnie koncertuje zarówno jako solistka, jak i&nbsp;kameralistka na scenach polskich i&nbsp;za granicą. Obecnie pełni funkcję pierwszych skrzypiec w&nbsp;Cooperate Orchestra – poznańskiej orkiestrze specjalizującej się w&nbsp;muzyce filmowej. Swoją pasję do muzyki z&nbsp;powodzeniem łączy z&nbsp;działalnością pedagogiczną.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ewelina Lachowska */}
+            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500">
+              <div className="flex flex-col sm:flex-row">
+                <div className="relative w-full sm:w-48 aspect-[3/4] sm:aspect-auto sm:min-h-[280px] flex-shrink-0 overflow-hidden">
+                  <Image
+                    src="/images/Ewelina_Lachowska.png"
+                    alt="Ewelina Lachowska"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+                </div>
+                <div className="p-6 flex flex-col justify-center">
+                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Ewelina Lachowska</h5>
+                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Wiolonczelistka</span>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed">
+                    Absolwentka Akademii Muzycznej im. Karola Lipińskiego we Wrocławiu. Wielokrotna uczestniczka International Lutosławski Youth Orchestra. Uczestniczyła w&nbsp;licznych kursach mistrzowskich, m.in. MORAWA Cello Masterclass, Międzynarodowej Akademii Wiolonczelowej, Warsztatach Wiolonczelowych w&nbsp;Augustowie, Międzynarodowym Kursie Mistrzowskim i&nbsp;innych. Miłośniczka muzyki kameralnej i&nbsp;orkiestrowej.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Pola Czyżewska-Grylak */}
+            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500">
+              <div className="flex flex-col sm:flex-row">
+                <div className="relative w-full sm:w-48 aspect-[3/4] sm:aspect-auto sm:min-h-[280px] flex-shrink-0 overflow-hidden">
+                  <Image
+                    src="/images/Pola_Czyzewska_Grylak.png"
+                    alt="Pola Czyżewska-Grylak"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+                </div>
+                <div className="p-6 flex flex-col justify-center">
+                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Pola Czyżewska-Grylak</h5>
+                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Skrzypaczka</span>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed">
+                    Ukończyła Akademię Muzyczną we Wrocławiu, po czym udała się na asystenturę profesorską do Oviedo w&nbsp;Hiszpanii. Tam kontynuowała rozpoczętą w&nbsp;Polsce ścieżkę pedagogiczną, założyła międzynarodowy duet skrzypcowo-wiolonczelowy, z&nbsp;którym w&nbsp;2025 roku zdobyła nagrodę Grand Prix, a&nbsp;także koncertowała z&nbsp;kwartetami oraz orkiestrami kameralnymi i&nbsp;symfonicznymi. Po powrocie do Polski postanowiła kontynuować swoje zamiłowanie do gry zespołowej oraz działalność pedagogiczną.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </Section>
 
       {/* Oferta */}
