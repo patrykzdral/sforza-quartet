@@ -14,8 +14,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Sforza Quartet | Kwartet smyczkowy",
-  description: "Profesjonalny kwartet smyczkowy oferujący ekskluzywną oprawę muzyczną ślubów, bankietów i imprez okolicznościowych.",
+  title: "Kwartet smyczkowy | Sforza Quartet",
+  description: "Profesjonalny kwartet smyczkowy z Wrocławia oferujący ekskluzywną oprawę muzyczną ślubów, bankietów, koncertów i imprez okolicznościowych.",
 };
 
 export default function RootLayout({
