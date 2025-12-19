@@ -62,32 +62,11 @@ export default function Home() {
         <div className="mt-24">
           <h4 className="text-gold-500 uppercase tracking-widest text-2xl mb-12 text-center">Poznaj nas</h4>
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            {/* Agata Graczyk */}
-            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
-              <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-auto flex-shrink-0 overflow-hidden bg-neutral-900/50">
-                  <Image
-                    src="/images/Agata_Graczyk.svg"
-                    alt="Agata Graczyk"
-                    fill
-                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
-                </div>
-                <div className="p-6 flex flex-col justify-center">
-                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Graczyk</h5>
-                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Altowiolistka</span>
-                  <p className="text-gray-400 text-sm font-light leading-relaxed">
-                    Altowiolistka, która z&nbsp;czasem zamieniła miejsce w&nbsp;środku orkiestry na podium dyrygenckie. Jako instrumentalistka koncertowała z&nbsp;orkiestrami symfonicznymi i&nbsp;kameralnymi. Dziś coraz częściej można ją spotkać z&nbsp;batutą w&nbsp;ręku – dyryguje orkiestrami filharmonii i&nbsp;oper w&nbsp;całej Polsce. Łączy wrażliwość altowiolistki z&nbsp;energią dyrygentki, wierząc, że dobra muzyka zaczyna się od uważnego słuchania – i&nbsp;siebie nawzajem.
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* Agata Doszczak */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
               <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-auto flex-shrink-0 overflow-hidden bg-neutral-900/50">
+                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
                   <Image
                     src="/images/Agata_Doszczak.svg"
                     alt="Agata Doszczak"
@@ -96,7 +75,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                 </div>
-                <div className="p-6 flex flex-col justify-center">
+                <div className="p-6 flex flex-col justify-start">
                   <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Doszczak</h5>
                   <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Skrzypaczka</span>
                   <p className="text-gray-400 text-sm font-light leading-relaxed">
@@ -106,32 +85,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Ewelina Lachowska */}
-            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
-              <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-auto flex-shrink-0 overflow-hidden bg-neutral-900/50">
-                  <Image
-                    src="/images/Ewelina_Lachowska.svg"
-                    alt="Ewelina Lachowska"
-                    fill
-                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
-                </div>
-                <div className="p-6 flex flex-col justify-center">
-                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Ewelina Lachowska</h5>
-                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Wiolonczelistka</span>
-                  <p className="text-gray-400 text-sm font-light leading-relaxed">
-                    Absolwentka Akademii Muzycznej im. Karola Lipińskiego we Wrocławiu. Wielokrotna uczestniczka International Lutosławski Youth Orchestra. Uczestniczyła w&nbsp;licznych kursach mistrzowskich, m.in. MORAWA Cello Masterclass, Międzynarodowej Akademii Wiolonczelowej, Warsztatach Wiolonczelowych w&nbsp;Augustowie, Międzynarodowym Kursie Mistrzowskim i&nbsp;innych. Miłośniczka muzyki kameralnej i&nbsp;orkiestrowej.
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Pola Czyżewska-Grylak */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
               <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-auto flex-shrink-0 overflow-hidden bg-neutral-900/50">
+                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
                   <Image
                     src="/images/Pola_Czyzewska_Grylak.svg"
                     alt="Pola Czyżewska-Grylak"
@@ -140,11 +97,57 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                 </div>
-                <div className="p-6 flex flex-col justify-center">
+                <div className="p-6 flex flex-col justify-start">
                   <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Pola Czyżewska-Grylak</h5>
                   <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Skrzypaczka</span>
                   <p className="text-gray-400 text-sm font-light leading-relaxed">
                     Ukończyła Akademię Muzyczną we Wrocławiu, po czym udała się na asystenturę profesorską do Oviedo w&nbsp;Hiszpanii. Tam kontynuowała rozpoczętą w&nbsp;Polsce ścieżkę pedagogiczną, założyła międzynarodowy duet skrzypcowo-wiolonczelowy, z&nbsp;którym w&nbsp;2025 roku zdobyła nagrodę Grand Prix, a&nbsp;także koncertowała z&nbsp;kwartetami oraz orkiestrami kameralnymi i&nbsp;symfonicznymi. Po powrocie do Polski postanowiła kontynuować swoje zamiłowanie do gry zespołowej oraz działalność pedagogiczną.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Agata Graczyk */}
+            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
+              <div className="flex flex-col sm:flex-row h-full">
+                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
+                  <Image
+                    src="/images/Agata_Graczyk.svg"
+                    alt="Agata Graczyk"
+                    fill
+                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+                </div>
+                <div className="p-6 flex flex-col justify-start">
+                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Graczyk</h5>
+                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Altowiolistka</span>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed">
+                    Altowiolistka, która z&nbsp;czasem zamieniła miejsce w&nbsp;środku orkiestry na podium dyrygenckie. Jako instrumentalistka koncertowała z&nbsp;orkiestrami symfonicznymi i&nbsp;kameralnymi. Dziś coraz częściej można ją spotkać z&nbsp;batutą w&nbsp;ręku – dyryguje orkiestrami filharmonii i&nbsp;oper w&nbsp;całej Polsce. Łączy wrażliwość altowiolistki z&nbsp;energią dyrygentki, wierząc, że dobra muzyka zaczyna się od uważnego słuchania – i&nbsp;siebie nawzajem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            {/* Ewelina Lachowska */}
+            <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
+              <div className="flex flex-col sm:flex-row h-full">
+                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
+                  <Image
+                    src="/images/Ewelina_Lachowska.svg"
+                    alt="Ewelina Lachowska"
+                    fill
+                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+                </div>
+                <div className="p-6 flex flex-col justify-start">
+                  <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Ewelina Lachowska</h5>
+                  <span className="text-gold-500/80 text-sm uppercase tracking-wider mb-3">Wiolonczelistka</span>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed">
+                    Absolwentka Akademii Muzycznej im. Karola Lipińskiego we Wrocławiu. Wielokrotna uczestniczka International Lutosławski Youth Orchestra. Uczestniczyła w&nbsp;licznych kursach mistrzowskich, m.in. MORAWA Cello Masterclass, Międzynarodowej Akademii Wiolonczelowej, Warsztatach Wiolonczelowych w&nbsp;Augustowie, Międzynarodowym Kursie Mistrzowskim i&nbsp;innych. Miłośniczka muzyki kameralnej i&nbsp;orkiestrowej.
                   </p>
                 </div>
               </div>
