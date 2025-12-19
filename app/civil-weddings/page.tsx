@@ -131,7 +131,7 @@ export default function CivilWeddings() {
                             <div className="bg-black/50 border border-neutral-800 rounded-lg p-8">
                                 <h3 className="text-xl font-serif text-white mb-4">Ceremonia ślubna</h3>
                                 <p className="text-3xl md:text-4xl font-serif text-gold-500">
-                                    2400 zł <span className="text-lg text-gray-400">+ dojazd</span>
+                                    2400 zł
                                 </p>
                             </div>
 
