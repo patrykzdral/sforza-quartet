@@ -24,7 +24,8 @@ export default function Navbar() {
     ];
 
     const rightLinks = [
-        { name: "Repertuar", href: "/#repertoire" },
+        { name: "Multimedia", href: "/multimedia" },
+        { name: "Repertuar", href: "/repertoire" },
         { name: "Kontakt", href: "/#contact" },
     ];
 

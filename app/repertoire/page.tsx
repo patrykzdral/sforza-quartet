@@ -86,83 +86,6 @@ export default function Repertoire() {
                 </div>
             </section>
 
-            {/* Repertuar ślubny Section */}
-            <section className="py-20 px-6 md:px-12 bg-neutral-900">
-                <div className="container mx-auto max-w-5xl">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <h2 className="text-2xl md:text-3xl font-serif mb-10">Repertuar ślubny</h2>
-
-                        <div className="grid md:grid-cols-2 gap-4">
-                            {weddingPieces.map((piece, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    className="bg-black/50 border border-neutral-800 hover:border-gold-500/30 transition-colors p-5 rounded-lg group flex gap-4"
-                                >
-                                    <span className="text-gold-500 text-lg font-medium min-w-[2rem]">
-                                        {index + 1}.
-                                    </span>
-                                    <div>
-                                        <span className="text-gold-500 text-sm font-medium block mb-1">
-                                            {piece.composer}
-                                        </span>
-                                        <span className="text-white font-light group-hover:text-gold-400 transition-colors">
-                                            {piece.title}
-                                        </span>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/* Muzyka klasyczna Section */}
-            <section className="py-20 px-6 md:px-12 bg-black border-t border-neutral-800">
-                <div className="container mx-auto max-w-5xl">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <h2 className="text-2xl md:text-3xl font-serif mb-10">Muzyka klasyczna</h2>
-
-                        <div className="grid md:grid-cols-2 gap-4">
-                            {classicalPieces.map((piece, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    className="bg-black/50 border border-neutral-800 hover:border-gold-500/30 transition-colors p-5 rounded-lg group flex gap-4"
-                                >
-                                    <span className="text-gold-500 text-lg font-medium min-w-[2rem]">
-                                        {index + 1}.
-                                    </span>
-                                    <div>
-                                        <span className="text-gold-500 text-sm font-medium block mb-1">
-                                            {piece.composer}
-                                        </span>
-                                        <span className="text-white font-light group-hover:text-gold-400 transition-colors">
-                                            {piece.title}
-                                        </span>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
 
             {/* Muzyka rozrywkowa Section */}
             <section className="py-20 px-6 md:px-12 bg-neutral-900">
@@ -204,7 +127,7 @@ export default function Repertoire() {
             </section>
 
             {/* Muzyka filmowa Section */}
-            <section className="py-20 px-6 md:px-12 bg-black border-t border-neutral-800">
+            <section className="py-20 px-6 md:px-12 bg-black">
                 <div className="container mx-auto max-w-5xl">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -241,6 +164,87 @@ export default function Repertoire() {
                     </motion.div>
                 </div>
             </section>
+
+
+            {/* Muzyka klasyczna Section */}
+            <section className="py-20 px-6 md:px-12 bg-neutral-900">
+                <div className="container mx-auto max-w-5xl">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h2 className="text-2xl md:text-3xl font-serif mb-10">Muzyka klasyczna</h2>
+
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {classicalPieces.map((piece, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                                    className="bg-black/50 border border-neutral-800 hover:border-gold-500/30 transition-colors p-5 rounded-lg group flex gap-4"
+                                >
+                                    <span className="text-gold-500 text-lg font-medium min-w-[2rem]">
+                                        {index + 1}.
+                                    </span>
+                                    <div>
+                                        <span className="text-gold-500 text-sm font-medium block mb-1">
+                                            {piece.composer}
+                                        </span>
+                                        <span className="text-white font-light group-hover:text-gold-400 transition-colors">
+                                            {piece.title}
+                                        </span>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+
+            {/* Repertuar ślubny Section */}
+            <section className="py-20 px-6 md:px-12 bg-black">
+                <div className="container mx-auto max-w-5xl">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h2 className="text-2xl md:text-3xl font-serif mb-10">Repertuar ślubny</h2>
+
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {weddingPieces.map((piece, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                                    className="bg-black/50 border border-neutral-800 hover:border-gold-500/30 transition-colors p-5 rounded-lg group flex gap-4"
+                                >
+                                    <span className="text-gold-500 text-lg font-medium min-w-[2rem]">
+                                        {index + 1}.
+                                    </span>
+                                    <div>
+                                        <span className="text-gold-500 text-sm font-medium block mb-1">
+                                            {piece.composer}
+                                        </span>
+                                        <span className="text-white font-light group-hover:text-gold-400 transition-colors">
+                                            {piece.title}
+                                        </span>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
 
             {/* Final Note */}
             <section className="py-16 px-6 md:px-12 bg-black border-t border-neutral-800">

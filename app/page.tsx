@@ -66,12 +66,12 @@ export default function Home() {
             {/* Agata Doszczak */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
               <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
+                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
                   <Image
                     src="/images/Agata_Doszczak.svg"
                     alt="Agata Doszczak"
                     fill
-                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                 </div>
@@ -88,12 +88,12 @@ export default function Home() {
             {/* Pola Czyżewska-Grylak */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
               <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
+                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
                   <Image
                     src="/images/Pola_Czyzewska_Grylak.svg"
                     alt="Pola Czyżewska-Grylak"
                     fill
-                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                 </div>
@@ -110,12 +110,12 @@ export default function Home() {
             {/* Agata Graczyk */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
               <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
+                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
                   <Image
                     src="/images/Agata_Graczyk.svg"
                     alt="Agata Graczyk"
                     fill
-                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                 </div>
@@ -134,12 +134,12 @@ export default function Home() {
             {/* Ewelina Lachowska */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
               <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 h-[250px] sm:h-64 flex-shrink-0 self-start overflow-hidden bg-neutral-900/50">
+                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
                   <Image
                     src="/images/Ewelina_Lachowska.svg"
                     alt="Ewelina Lachowska"
                     fill
-                    className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                 </div>
@@ -161,8 +161,7 @@ export default function Home() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h3 className="text-gold-500 uppercase tracking-widest text-3xl mb-6">Oferta</h3>
           <p className="text-gray-400 font-light text-lg mb-4">
-            Oferujemy profesjonalną oprawę muzyczną, która nada Twojemu wydarzeniu wyjątkowy charakter i
-            atmosferę.
+            Oferujemy profesjonalną oprawę muzyczną, która nada Twojemu wydarzeniu wyjątkowy charakter i&nbsp;atmosferę.
           </p>
           <p className="text-neutral-500 text-sm italic">
             Kliknij w kafelek, aby dowiedzieć się więcej →
