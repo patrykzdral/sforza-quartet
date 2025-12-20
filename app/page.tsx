@@ -65,15 +65,20 @@ export default function Home() {
 
             {/* Agata Doszczak */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
-              <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
-                  <Image
-                    src="/images/Agata_Doszczak.svg"
-                    alt="Agata Doszczak"
-                    fill
-                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+              <div className="flex flex-col sm:flex-row sm:items-start h-full">
+                <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
+                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                    <Image
+                      src="/images/Agata_Doszczak.svg"
+                      alt="Agata Doszczak"
+                      fill
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+                  </div>
+                  <a href="https://www.instagram.com/agatadoszczak.violin/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 text-gray-500 hover:text-gold-500 transition-colors text-sm py-2 bg-neutral-900/30">
+                    <FaInstagram size={14} /> @agatadoszczak.violin
+                  </a>
                 </div>
                 <div className="p-6 flex flex-col justify-start">
                   <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Doszczak</h5>
@@ -87,15 +92,20 @@ export default function Home() {
 
             {/* Pola Czyżewska-Grylak */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
-              <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
-                  <Image
-                    src="/images/Pola_Czyzewska_Grylak.svg"
-                    alt="Pola Czyżewska-Grylak"
-                    fill
-                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+              <div className="flex flex-col sm:flex-row sm:items-start h-full">
+                <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
+                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                    <Image
+                      src="/images/Pola_Czyzewska_Grylak.svg"
+                      alt="Pola Czyżewska-Grylak"
+                      fill
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+                  </div>
+                  <a href="https://www.instagram.com/eva.polart/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 text-gray-500 hover:text-gold-500 transition-colors text-sm py-2 bg-neutral-900/30">
+                    <FaInstagram size={14} /> @eva.polart
+                  </a>
                 </div>
                 <div className="p-6 flex flex-col justify-start">
                   <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Pola Czyżewska-Grylak</h5>
@@ -109,15 +119,20 @@ export default function Home() {
 
             {/* Agata Graczyk */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
-              <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
-                  <Image
-                    src="/images/Agata_Graczyk.svg"
-                    alt="Agata Graczyk"
-                    fill
-                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+              <div className="flex flex-col sm:flex-row sm:items-start h-full">
+                <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
+                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                    <Image
+                      src="/images/Agata_Graczyk.svg"
+                      alt="Agata Graczyk"
+                      fill
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+                  </div>
+                  <a href="https://www.instagram.com/agatagraczyk_conductor/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 text-gray-500 hover:text-gold-500 transition-colors text-sm py-2 bg-neutral-900/30">
+                    <FaInstagram size={14} /> @agatagraczyk_conductor
+                  </a>
                 </div>
                 <div className="p-6 flex flex-col justify-start">
                   <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Agata Graczyk</h5>
@@ -133,15 +148,20 @@ export default function Home() {
 
             {/* Ewelina Lachowska */}
             <div className="group relative overflow-hidden rounded-sm bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 hover:border-gold-500/30 transition-all duration-500 h-full">
-              <div className="flex flex-col sm:flex-row h-full">
-                <div className="relative w-full sm:w-48 aspect-square flex-shrink-0 self-center overflow-hidden bg-neutral-900/50 flex items-center justify-center">
-                  <Image
-                    src="/images/Ewelina_Lachowska.svg"
-                    alt="Ewelina Lachowska"
-                    fill
-                    className="object-contain object-[left_center] p-2 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+              <div className="flex flex-col sm:flex-row sm:items-start h-full">
+                <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
+                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                    <Image
+                      src="/images/Ewelina_Lachowska.svg"
+                      alt="Ewelina Lachowska"
+                      fill
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
+                  </div>
+                  <a href="https://www.instagram.com/ewel.lachowska/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 text-gray-500 hover:text-gold-500 transition-colors text-sm py-2 bg-neutral-900/30">
+                    <FaInstagram size={14} /> @ewel.lachowska
+                  </a>
                 </div>
                 <div className="p-6 flex flex-col justify-start">
                   <h5 className="text-xl font-serif text-white mb-1 group-hover:text-gold-400 transition-colors">Ewelina Lachowska</h5>
