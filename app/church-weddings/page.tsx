@@ -190,7 +190,10 @@ export default function ChurchWeddings() {
                             <div className="bg-neutral-900/50 border border-neutral-800 rounded-lg p-8">
                                 <h3 className="text-xl font-serif text-white mb-4">Ceremonia ślubna</h3>
                                 <p className="text-3xl md:text-4xl font-serif text-gold-500">
-                                    od 2400 zł
+                                    2500 zł*
+                                </p>
+                                <p className="text-sm text-gray-500 mt-6 italic">
+                                    *W cenie zawarty dojazd do 60 km od Wrocławia. Powyżej 60 km od Wrocławia zostanie doliczona opłata za dojazd.
                                 </p>
                             </div>
 
