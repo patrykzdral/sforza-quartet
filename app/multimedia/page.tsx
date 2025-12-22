@@ -7,19 +7,19 @@ import { ArrowLeft, Play } from "lucide-react";
 
 const videos = [
     {
-        title: "Wykonanie na żywo",
-        description: "Fragment naszego występu podczas koncertu",
-        youtubeId: "dQw4w9WgXcQ", // Placeholder - replace with actual video ID
+        title: "Wildest Dream",
+        description: "Taylor Swift",
+        youtubeId: "qz27O0rRc7Q",
     },
     {
-        title: "Ślub w kościele",
-        description: "Oprawa muzyczna ceremonii ślubnej",
-        youtubeId: "dQw4w9WgXcQ", // Placeholder - replace with actual video ID
+        title: "Viva la Vida",
+        description: "Coldplay",
+        youtubeId: "oRVbeh2xAfQ",
     },
     {
-        title: "Bankiet firmowy",
-        description: "Muzyka podczas eleganckich wydarzeń",
-        youtubeId: "dQw4w9WgXcQ", // Placeholder - replace with actual video ID
+        title: "Por una cabeza",
+        description: "Carlos Gardel",
+        youtubeId: "lfLmGJBm5FI",
     },
 ];
 
@@ -48,8 +48,7 @@ export default function Multimedia() {
                         </h1>
 
                         <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
-                            Zobacz i&nbsp;posłuchaj naszych występów. Poniżej znajdziesz nagrania
-                            z&nbsp;koncertów, ceremonii ślubnych i&nbsp;innych wydarzeń.
+                            Zobacz i&nbsp;posłuchaj naszych występów. Poniżej znajdziesz nagrania z&nbsp;prób, koncertów, ceremonii ślubnych i&nbsp;innych wydarzeń.
                         </p>
                     </motion.div>
                 </div>
