@@ -21,6 +21,11 @@ const videos = [
         description: "Carlos Gardel",
         youtubeId: "lfLmGJBm5FI",
     },
+    {
+        title: "Ave Verum",
+        description: "Wolfgang Amadeus Mozart",
+        youtubeId: "_8mgSHMJL48",
+    }
 ];
 
 export default function Multimedia() {
