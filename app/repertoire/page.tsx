@@ -68,12 +68,12 @@ export default function Repertoire() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <a
+                        <Link
                             href="/#repertoire"
                             className="relative z-10 inline-flex items-center justify-center gap-3 px-6 py-3 border border-gold-500 text-gold-500 font-medium uppercase tracking-widest hover:bg-gold-500 hover:text-black transition-colors rounded mb-8"
                         >
                             <ArrowLeft size={18} /> Powrót
-                        </a>
+                        </Link>
 
                         <h1 className="text-4xl md:text-6xl font-serif mb-6">
                             Repertuar

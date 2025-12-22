@@ -15,11 +15,6 @@ export default function Footer() {
                         Copyright © {new Date().getFullYear()} Sforza Quartet. Wszelkie prawa zastrzeżone.                    </p>
                 </div>
 
-                {/* Contact - Center */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-
-                </div>
-
                 {/* Social Icons - Right */}
                 <div className="flex items-center gap-4">
                     <a href="mailto:sforzaquartet@gmail.com"
