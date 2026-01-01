@@ -190,7 +190,7 @@ export default function ContactForm() {
                 <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full bg-white text-black py-4 font-serif text-lg hover:bg-gold-500 hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-gradient-to-r from-gold-500 to-gold-400 text-black py-4 font-medium uppercase tracking-widest hover:shadow-[0_0_40px_rgba(139,115,85,0.5)] hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg"
                 >
                     {status === "loading" ? "Wysyłanie..." : "Wyślij wiadomość"}
                 </button>

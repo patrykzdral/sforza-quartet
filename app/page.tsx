@@ -75,7 +75,7 @@ export default function Home() {
             </div>
             <h4 className="gradient-text uppercase tracking-[0.3em] text-sm font-medium">Poznaj nas</h4>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          <div className="grid md:grid-cols-2 gap-6 items-start">
 
             {/* Agata Doszczak */}
             <div className="group relative overflow-hidden rounded-xl card-modern h-full">
