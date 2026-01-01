@@ -46,13 +46,13 @@ export default function Footer() {
                     <div className="flex items-center gap-3">
                         <a href="https://www.facebook.com/profile.php?id=61582079500417" target="_blank"
                             rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full glass border border-neutral-700 flex items-center justify-center text-neutral-500 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-all duration-300"
+                            className="w-10 h-10 rounded-full glass border border-neutral-700 flex items-center justify-center text-neutral-500 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(139,115,85,0.15)] transition-all duration-300"
                             aria-label="Facebook">
                             <FaFacebookF size={16} />
                         </a>
                         <a href="https://www.instagram.com/sforza_quartet/" target="_blank"
                             rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full glass border border-neutral-700 flex items-center justify-center text-neutral-500 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-all duration-300"
+                            className="w-10 h-10 rounded-full glass border border-neutral-700 flex items-center justify-center text-neutral-500 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(139,115,85,0.15)] transition-all duration-300"
                             aria-label="Instagram">
                             <FaInstagram size={16} />
                         </a>
