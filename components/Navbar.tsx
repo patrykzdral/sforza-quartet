@@ -1,13 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isOfferDropdownOpen, setIsOfferDropdownOpen] = useState(false);
+    const [isMobileOfferOpen, setIsMobileOfferOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,9 +21,25 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsOfferDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    const offerSubLinks = [
+        { name: "Śluby kościelne", href: "/church-weddings" },
+        { name: "Ceremonie ślubne poza kościołem", href: "/civil-weddings" },
+        { name: "Imprezy okolicznościowe, bankiety, koncerty", href: "/banquets-and-concerts" },
+    ];
+
     const leftLinks = [
         { name: "O nas", href: "/#about" },
-        { name: "Oferta", href: "/#offer" },
     ];
 
     const rightLinks = [
@@ -41,7 +60,7 @@ export default function Navbar() {
                     <div className="flex-1 flex justify-start">
                         <button
                             className="md:hidden text-white z-50 pointer-events-auto"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aw
                         >
                             {isMobileMenuOpen ? <X /> : <Menu />}
                         </button>
@@ -55,6 +74,44 @@ export default function Navbar() {
                                     {link.name}
                                 </Link>
                             ))}
+                            {/* Oferta Dropdown */}
+                            <div
+                                ref={dropdownRef}
+                                className="relative"
+                                onMouseEnter={() => setIsOfferDropdownOpen(true)}
+                                onMouseLeave={() => setIsOfferDropdownOpen(false)}
+                            >
+                                <button
+                                    onClick={() => setIsOfferDropdownOpen(!isOfferDropdownOpen)}
+                                    className="flex items-center gap-1 text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
+                                >
+                                    Oferta
+                                    <ChevronDown
+                                        className={`w-4 h-4 transition-transform duration-300 ${isOfferDropdownOpen ? 'rotate-180' : ''}`}
+                                    />
+                                </button>
+                                <AnimatePresence>
+                                    {isOfferDropdownOpen && (
+                                        <motion.div
+                                            initial={{ opacity: 0, y: -10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.2 }}
+                                            className="absolute top-full left-0 mt-2 min-w-[280px] bg-black/95 backdrop-blur-md rounded-lg shadow-xl border border-gold-500/20 overflow-hidden"
+                                        >
+                                            {offerSubLinks.map((subLink) => (
+                                                <Link
+                                                    key={subLink.name}
+                                                    href={subLink.href}
+                                                    className="block px-4 py-3 text-sm text-white/80 hover:text-gold-500 hover:bg-white/5 transition-colors duration-300"
+                                                >
+                                                    {subLink.name}
+                                                </Link>
+                                            ))}
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
                         </div>
                     </div>
 
@@ -91,9 +148,53 @@ export default function Navbar() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center space-y-8"
+                        className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center space-y-6 overflow-y-auto py-20"
                     >
-                        {[...leftLinks, ...rightLinks].map((link) => (
+                        {leftLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-2xl font-serif text-white hover:text-gold-500 transition-colors"
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
+                        {/* Mobile Oferta with sub-links */}
+                        <div className="flex flex-col items-center">
+                            <button
+                                onClick={() => setIsMobileOfferOpen(!isMobileOfferOpen)}
+                                className="flex items-center gap-2 text-2xl font-serif text-white hover:text-gold-500 transition-colors"
+                            >
+                                Oferta
+                                <ChevronDown
+                                    className={`w-5 h-5 transition-transform duration-300 ${isMobileOfferOpen ? 'rotate-180' : ''}`}
+                                />
+                            </button>
+                            <AnimatePresence>
+                                {isMobileOfferOpen && (
+                                    <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="flex flex-col items-center mt-4 space-y-3 overflow-hidden"
+                                    >
+                                        {offerSubLinks.map((subLink) => (
+                                            <Link
+                                                key={subLink.name}
+                                                href={subLink.href}
+                                                onClick={() => setIsMobileMenuOpen(false)}
+                                                className="text-lg text-white/70 hover:text-gold-500 transition-colors text-center px-4"
+                                            >
+                                                {subLink.name}
+                                            </Link>
+                                        ))}
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
+                        {rightLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
