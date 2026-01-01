@@ -155,7 +155,7 @@ export default function CivilWeddings() {
                                     2500 zł*
                                 </p>
                                 <p className="text-sm text-gray-500 mt-6">
-                                    *Dojazd do 60 km od Wrocławia jest wliczony w cenę, a poza tym zakresem naliczana jest opłata.
+                                    *Dojazd do 60 km od Wrocławia w cenie. Powyżej tego limitu doliczana jest opłata.
                                 </p>
                             </div>
 
