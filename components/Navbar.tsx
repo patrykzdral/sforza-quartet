@@ -51,7 +51,9 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 pointer-events-none ${isScrolled ? "bg-black/90 backdrop-blur-md py-4" : "bg-transparent py-8"
+                className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 pointer-events-none ${isScrolled
+                    ? "bg-cream/95 backdrop-blur-md py-4 shadow-sm"
+                    : "bg-transparent py-8"
                     }`}
             >
                 <div className="container mx-auto px-6 flex items-center">
@@ -59,7 +61,7 @@ export default function Navbar() {
                     {/* Left column - Menu button on mobile, links on desktop */}
                     <div className="flex-1 flex justify-start">
                         <button
-                            className="md:hidden text-white z-50 pointer-events-auto"
+                            className="md:hidden text-charcoal z-50 pointer-events-auto hover:text-burgundy transition-colors"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
                             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -69,7 +71,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
+                                    className="text-sm uppercase tracking-[0.2em] text-charcoal/70 hover:text-burgundy transition-colors duration-300"
                                 >
                                     {link.name}
                                 </Link>
@@ -83,7 +85,7 @@ export default function Navbar() {
                             >
                                 <button
                                     onClick={() => setIsOfferDropdownOpen(!isOfferDropdownOpen)}
-                                    className="flex items-center gap-1 text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
+                                    className="flex items-center gap-1 text-sm uppercase tracking-[0.2em] text-charcoal/70 hover:text-burgundy transition-colors duration-300"
                                 >
                                     Oferta
                                     <ChevronDown
@@ -97,13 +99,13 @@ export default function Navbar() {
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0, y: -10 }}
                                             transition={{ duration: 0.2 }}
-                                            className="absolute top-full left-0 mt-2 min-w-[280px] bg-black/95 backdrop-blur-md rounded-lg shadow-xl border border-gold-500/20 overflow-hidden"
+                                            className="absolute top-full left-0 mt-2 min-w-[280px] bg-ivory/98 backdrop-blur-md rounded-xl shadow-lg border border-burgundy/10 overflow-hidden"
                                         >
                                             {offerSubLinks.map((subLink) => (
                                                 <Link
                                                     key={subLink.name}
                                                     href={subLink.href}
-                                                    className="block px-4 py-3 text-sm text-white/80 hover:text-gold-500 hover:bg-white/5 transition-colors duration-300"
+                                                    className="block px-5 py-3 text-sm text-charcoal/70 hover:text-burgundy hover:bg-burgundy/5 transition-colors duration-300"
                                                 >
                                                     {subLink.name}
                                                 </Link>
@@ -117,11 +119,11 @@ export default function Navbar() {
 
                     {/* Center column - Logo (always centered) */}
                     <Link href="/" className="z-50 group flex flex-col items-center justify-center flex-shrink-0 pointer-events-auto">
-                        <div className="relative font-serif text-3xl md:text-4xl text-gold-500 flex items-center justify-center h-12 w-16">
-                            <span className="absolute transform translate-x-[-6px] group-hover:translate-x-[-9px] transition-transform duration-500 text-glow-gold">S</span>
-                            <span className="absolute transform translate-x-[6px] group-hover:translate-x-[9px] transition-transform duration-500 z-10 text-white/80">Q</span>
+                        <div className="relative font-serif text-3xl md:text-4xl flex items-center justify-center h-12 w-16">
+                            <span className="absolute transform translate-x-[-6px] group-hover:translate-x-[-9px] transition-transform duration-500 text-burgundy">S</span>
+                            <span className="absolute transform translate-x-[6px] group-hover:translate-x-[9px] transition-transform duration-500 z-10 text-charcoal/60">Q</span>
                         </div>
-                        <span className="text-[0.55rem] uppercase tracking-[0.35em] text-white/50 mt-0.5 hidden md:block group-hover:text-gold-500/80 transition-colors duration-300">Sforza Quartet</span>
+                        <span className="text-[0.55rem] uppercase tracking-[0.35em] text-charcoal/40 mt-0.5 hidden md:block group-hover:text-burgundy/80 transition-colors duration-300">Sforza Quartet</span>
                     </Link>
 
                     {/* Right column - Links on desktop, empty space on mobile for balance */}
@@ -131,7 +133,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-sm uppercase tracking-[0.2em] text-white/80 hover:text-gold-500 transition-colors duration-300"
+                                    className="text-sm uppercase tracking-[0.2em] text-charcoal/70 hover:text-burgundy transition-colors duration-300"
                                 >
                                     {link.name}
                                 </Link>
@@ -148,14 +150,14 @@ export default function Navbar() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center space-y-6 overflow-y-auto py-20"
+                        className="fixed inset-0 bg-cream z-40 flex flex-col items-center justify-center space-y-6 overflow-y-auto py-20"
                     >
                         {leftLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-2xl font-serif text-white hover:text-gold-500 transition-colors"
+                                className="text-2xl font-serif text-charcoal hover:text-burgundy transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -164,7 +166,7 @@ export default function Navbar() {
                         <div className="flex flex-col items-center">
                             <button
                                 onClick={() => setIsMobileOfferOpen(!isMobileOfferOpen)}
-                                className="flex items-center gap-2 text-2xl font-serif text-white hover:text-gold-500 transition-colors"
+                                className="flex items-center gap-2 text-2xl font-serif text-charcoal hover:text-burgundy transition-colors"
                             >
                                 Oferta
                                 <ChevronDown
@@ -185,7 +187,7 @@ export default function Navbar() {
                                                 key={subLink.name}
                                                 href={subLink.href}
                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                className="text-lg text-white/70 hover:text-gold-500 transition-colors text-center px-4"
+                                                className="text-lg text-charcoal/60 hover:text-burgundy transition-colors text-center px-4"
                                             >
                                                 {subLink.name}
                                             </Link>
@@ -199,7 +201,7 @@ export default function Navbar() {
                                 key={link.name}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-2xl font-serif text-white hover:text-gold-500 transition-colors"
+                                className="text-2xl font-serif text-charcoal hover:text-burgundy transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -210,4 +212,3 @@ export default function Navbar() {
         </>
     );
 }
-

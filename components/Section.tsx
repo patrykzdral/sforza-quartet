@@ -14,23 +14,27 @@ export default function Section({ children, id, className = "", dark = false }: 
     return (
         <section
             id={id}
-            className={`relative py-16 md:py-20 px-6 md:px-12 overflow-hidden ${dark ? "bg-black text-white" : "bg-neutral-900/50 text-white"
+            className={`relative py-20 md:py-28 px-6 md:px-12 overflow-hidden ${dark ? "bg-charcoal" : "bg-gradient-to-br from-cream via-ivory to-cream"
                 } ${className}`}
         >
             {/* Subtle gradient background */}
             <div className="absolute inset-0 pointer-events-none">
-                {dark && (
+                {dark ? (
                     <>
-                        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
-                        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
+                        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-rose-gold/30 to-transparent" />
+                        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-rose-gold/30 to-transparent" />
+                        <div className="absolute inset-0 mesh-gradient-2 opacity-40" />
                     </>
-                )}
-                {!dark && (
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-neutral-900/50 to-black/80" />
+                ) : (
+                    <>
+                        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-rose-gold/25 to-transparent" />
+                        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-rose-gold/25 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-b from-burgundy/5 via-transparent to-burgundy/5" />
+                    </>
                 )}
             </div>
 
-            {/* Noise texture overlay */}
+            {/* Subtle texture overlay */}
             <div className="absolute inset-0 noise-overlay pointer-events-none" />
 
             <div className="container mx-auto max-w-6xl relative z-10">

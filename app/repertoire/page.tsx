@@ -69,14 +69,14 @@ function PieceCard({ piece, index }: PieceCardProps) {
             transition={{ duration: 0.4, delay: index * 0.03 }}
             className="card-modern p-5 rounded-xl group flex gap-4"
         >
-            <span className="text-gold-500 text-lg font-medium min-w-[2rem]">
+            <span className="text-burgundy text-lg font-medium min-w-[2rem]">
                 {index + 1}.
             </span>
             <div>
-                <span className="text-gold-500 text-sm font-medium block mb-1">
+                <span className="text-burgundy text-sm font-medium block mb-1">
                     {piece.composer}
                 </span>
-                <span className="text-white font-light group-hover:text-gold-400 transition-colors">
+                <span className="text-charcoal font-light group-hover:text-burgundy transition-colors">
                     {piece.title}
                 </span>
             </div>
@@ -86,15 +86,13 @@ function PieceCard({ piece, index }: PieceCardProps) {
 
 export default function Repertoire() {
     return (
-        <main className="bg-black min-h-screen">
+        <main className="bg-cream min-h-screen">
             <Navbar />
 
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 px-6 md:px-12 overflow-hidden">
                 {/* Background decoration */}
-                <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-gold-500/5 blur-3xl" />
-                </div>
+                <div className="absolute inset-0 pointer-events-none mesh-gradient-1 opacity-50" />
 
                 <div className="container mx-auto max-w-5xl relative">
                     <motion.div
@@ -104,21 +102,21 @@ export default function Repertoire() {
                     >
                         <Link
                             href="/#repertoire"
-                            className="inline-flex items-center justify-center gap-3 px-6 py-3 btn-premium text-gold-500 font-medium uppercase tracking-widest rounded-full mb-8"
+                            className="inline-flex items-center justify-center gap-3 px-6 py-3 btn-outline text-burgundy font-medium uppercase tracking-widest rounded-full mb-8"
                         >
                             <ArrowLeft size={18} /> Powrót
                         </Link>
 
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="h-px w-12 bg-gradient-to-r from-gold-500 to-transparent" />
-                            <span className="gradient-text uppercase tracking-[0.3em] text-sm font-medium">Muzyka</span>
+                            <div className="h-px w-12 bg-gradient-to-r from-burgundy to-transparent" />
+                            <span className="gradient-text-static uppercase tracking-[0.3em] text-sm font-medium">Muzyka</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-6xl font-serif mb-6">
-                            <span className="text-gold-500">Reper</span>tuar
+                        <h1 className="text-4xl md:text-6xl font-serif text-charcoal mb-6">
+                            <span className="text-burgundy">Reper</span>tuar
                         </h1>
 
-                        <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
+                        <p className="text-xl text-charcoal/60 font-light leading-relaxed max-w-3xl">
                             Poniżej znajdą Państwo przykładowe utwory, które znajdują się w naszym repertuarze.
                         </p>
                     </motion.div>
@@ -127,8 +125,8 @@ export default function Repertoire() {
 
 
             {/* Muzyka rozrywkowa Section */}
-            <section className="relative py-12 px-6 md:px-12 bg-neutral-900/50 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none" />
+            <section className="relative py-12 px-6 md:px-12 bg-ivory overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-burgundy/10 to-transparent" />
                 <div className="absolute inset-0 noise-overlay pointer-events-none" />
 
                 <div className="container mx-auto max-w-5xl relative">
@@ -139,10 +137,10 @@ export default function Repertoire() {
                         transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <div className="flex items-center gap-3 mb-10">
-                            <div className="p-2 rounded-full glass border border-gold-500/30">
-                                <Sparkles className="text-gold-500" size={24} />
+                            <div className="p-2 rounded-full icon-container">
+                                <Sparkles className="text-burgundy" size={24} />
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-serif">Muzyka rozrywkowa</h2>
+                            <h2 className="text-2xl md:text-3xl font-serif text-charcoal">Muzyka rozrywkowa</h2>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4">
@@ -155,8 +153,8 @@ export default function Repertoire() {
             </section>
 
             {/* Muzyka filmowa Section */}
-            <section className="relative py-12 px-6 md:px-12 bg-black overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
+            <section className="relative py-12 px-6 md:px-12 bg-cream overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-burgundy/15 to-transparent" />
 
                 <div className="container mx-auto max-w-5xl relative">
                     <motion.div
@@ -166,10 +164,10 @@ export default function Repertoire() {
                         transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <div className="flex items-center gap-3 mb-10">
-                            <div className="p-2 rounded-full glass border border-gold-500/30">
-                                <Film className="text-gold-500" size={24} />
+                            <div className="p-2 rounded-full icon-container">
+                                <Film className="text-burgundy" size={24} />
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-serif">Muzyka filmowa</h2>
+                            <h2 className="text-2xl md:text-3xl font-serif text-charcoal">Muzyka filmowa</h2>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4">
@@ -183,8 +181,8 @@ export default function Repertoire() {
 
 
             {/* Muzyka klasyczna Section */}
-            <section className="relative py-12 px-6 md:px-12 bg-neutral-900/50 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none" />
+            <section className="relative py-12 px-6 md:px-12 bg-ivory overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-burgundy/10 to-transparent" />
                 <div className="absolute inset-0 noise-overlay pointer-events-none" />
 
                 <div className="container mx-auto max-w-5xl relative">
@@ -195,10 +193,10 @@ export default function Repertoire() {
                         transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <div className="flex items-center gap-3 mb-10">
-                            <div className="p-2 rounded-full glass border border-gold-500/30">
-                                <Music className="text-gold-500" size={24} />
+                            <div className="p-2 rounded-full icon-container">
+                                <Music className="text-burgundy" size={24} />
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-serif">Muzyka klasyczna</h2>
+                            <h2 className="text-2xl md:text-3xl font-serif text-charcoal">Muzyka klasyczna</h2>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4">
@@ -212,8 +210,8 @@ export default function Repertoire() {
 
 
             {/* Repertuar ślubny Section */}
-            <section className="relative py-12 px-6 md:px-12 bg-black overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
+            <section className="relative py-12 px-6 md:px-12 bg-cream overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-burgundy/15 to-transparent" />
 
                 <div className="container mx-auto max-w-5xl relative">
                     <motion.div
@@ -223,10 +221,10 @@ export default function Repertoire() {
                         transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <div className="flex items-center gap-3 mb-10">
-                            <div className="p-2 rounded-full glass border border-gold-500/30">
-                                <Heart className="text-gold-500" size={24} />
+                            <div className="p-2 rounded-full icon-container">
+                                <Heart className="text-burgundy" size={24} />
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-serif">Repertuar ślubny</h2>
+                            <h2 className="text-2xl md:text-3xl font-serif text-charcoal">Repertuar ślubny</h2>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4">
@@ -240,8 +238,8 @@ export default function Repertoire() {
 
 
             {/* Final Note */}
-            <section className="relative py-10 px-6 md:px-12 bg-black overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
+            <section className="relative py-10 px-6 md:px-12 bg-charcoal overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-rose-gold/30 to-transparent" />
 
                 <div className="container mx-auto max-w-5xl text-center relative">
                     <motion.div
@@ -256,13 +254,13 @@ export default function Repertoire() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 download
-                                className="inline-flex items-center justify-center gap-3 px-8 py-4 btn-premium text-gold-500 font-medium uppercase tracking-widest rounded-full"
+                                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/5 border border-white/20 text-white hover:border-rose-gold/50 hover:text-rose-gold font-medium uppercase tracking-widest rounded-full transition-all duration-300"
                             >
                                 Pobierz repertuar (PDF)
                             </a>
                             <Link
                                 href="/#contact"
-                                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-400 text-black font-medium uppercase tracking-widest hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all duration-300 rounded-full"
+                                className="inline-flex items-center justify-center gap-3 px-8 py-4 btn-premium font-medium uppercase tracking-widest rounded-full"
                             >
                                 Skontaktuj się z nami
                             </Link>

@@ -65,18 +65,18 @@ export default function ContactForm() {
 
     if (status === "success") {
         return (
-            <div className="bg-neutral-900/50 p-8 md:p-12 border border-neutral-800 flex flex-col items-center justify-center min-h-[400px]">
+            <div className="bg-white/5 backdrop-blur-sm p-8 md:p-12 border border-white/10 rounded-2xl flex flex-col items-center justify-center min-h-[400px]">
                 <div className="text-center space-y-4">
-                    <div className="text-gold-500 text-5xl mb-4">✓</div>
+                    <div className="text-rose-gold text-5xl mb-4">✓</div>
                     <h3 className="text-2xl font-serif text-white">
                         Dziękujemy za wiadomość!
                     </h3>
-                    <p className="text-gray-400">
+                    <p className="text-white/50">
                         Odpowiemy najszybciej jak to możliwe.
                     </p>
                     <button
                         onClick={() => setStatus("idle")}
-                        className="mt-6 text-gold-500 hover:text-white text-sm uppercase tracking-widest transition-colors"
+                        className="mt-6 text-rose-gold hover:text-white text-sm uppercase tracking-widest transition-colors"
                     >
                         Wyślij kolejną wiadomość →
                     </button>
@@ -85,14 +85,14 @@ export default function ContactForm() {
         );
     }
 
-    const inputClassName = "w-full bg-black border-b border-neutral-700 p-3 text-white focus:border-gold-500 focus:outline-none transition-colors";
+    const inputClassName = "w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white placeholder-white/30 focus:border-rose-gold/50 focus:bg-white/10 focus:outline-none transition-all";
 
     return (
-        <div className="bg-neutral-900/50 p-8 md:p-12 border border-neutral-800">
+        <div className="bg-white/5 backdrop-blur-sm p-8 md:p-12 border border-white/10 rounded-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
-                        Imię i Nazwisko <span className="text-red-500">*</span>
+                    <label className="block text-sm text-white/40 mb-2 uppercase tracking-wider">
+                        Imię i Nazwisko <span className="text-rose-gold">*</span>
                     </label>
                     <input
                         type="text"
@@ -106,8 +106,8 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
-                        Email <span className="text-red-500">*</span>
+                    <label className="block text-sm text-white/40 mb-2 uppercase tracking-wider">
+                        Email <span className="text-rose-gold">*</span>
                     </label>
                     <input
                         type="email"
@@ -121,7 +121,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                    <label className="block text-sm text-white/40 mb-2 uppercase tracking-wider">
                         Numer telefonu
                     </label>
                     <input
@@ -136,7 +136,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                    <label className="block text-sm text-white/40 mb-2 uppercase tracking-wider">
                         Data wydarzenia
                     </label>
                     <DatePicker
@@ -154,7 +154,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                    <label className="block text-sm text-white/40 mb-2 uppercase tracking-wider">
                         Miejsce wydarzenia
                     </label>
                     <input
@@ -169,7 +169,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm text-neutral-500 mb-2 uppercase tracking-wider">
+                    <label className="block text-sm text-white/40 mb-2 uppercase tracking-wider">
                         Wiadomość
                     </label>
                     <textarea
@@ -190,7 +190,7 @@ export default function ContactForm() {
                 <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full bg-white text-black py-4 font-serif text-lg hover:bg-gold-500 hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full btn-premium py-4 font-serif text-lg rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     {status === "loading" ? "Wysyłanie..." : "Wyślij wiadomość"}
                 </button>
