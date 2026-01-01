@@ -75,18 +75,18 @@ export default function Home() {
             </div>
             <h4 className="gradient-text uppercase tracking-[0.3em] text-sm font-medium">Poznaj nas</h4>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          <div className="grid md:grid-cols-2 gap-6 items-start">
 
             {/* Agata Doszczak */}
             <div className="group relative overflow-hidden rounded-xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
                     <Image
                       src="/images/Agata_Doszczak.svg"
                       alt="Agata Doszczak"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -108,12 +108,12 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
                     <Image
                       src="/images/Pola_Czyzewska_Grylak.svg"
                       alt="Pola Czyżewska-Grylak"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -135,12 +135,12 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
                     <Image
                       src="/images/Agata_Graczyk.svg"
                       alt="Agata Graczyk"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -164,12 +164,12 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
                     <Image
                       src="/images/Ewelina_Lachowska.svg"
                       alt="Ewelina Lachowska"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -328,12 +328,12 @@ export default function Home() {
               <div className="flex gap-3 pt-4">
                 <a href="https://www.instagram.com/sforza_quartet/" target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full glass border border-neutral-700 text-neutral-400 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-all duration-300">
+                  className="p-3 rounded-full glass border border-neutral-700 text-neutral-400 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(139,115,85,0.15)] transition-all duration-300">
                   <FaInstagram size={22} />
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=61582079500417" target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full glass border border-neutral-700 text-neutral-400 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-all duration-300">
+                  className="p-3 rounded-full glass border border-neutral-700 text-neutral-400 hover:text-gold-500 hover:border-gold-500/50 hover:shadow-[0_0_20px_rgba(139,115,85,0.15)] transition-all duration-300">
                   <FaFacebookF size={22} />
                 </a>
               </div>
