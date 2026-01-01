@@ -305,7 +305,7 @@ export default function Home() {
               Zagrajmy <span className="text-gold-500">razem.</span>
             </h2>
             <p className="text-gray-400 text-lg font-light mb-10 max-w-md leading-relaxed">
-              Jeśli planujesz wydarzenie i&nbsp;szukasz wyjątkowej oprawy muzycznej, napisz do nas.
+              Jeśli planujesz wydarzenie i&nbsp;szukasz wyjątkowej oprawy muzycznej, napisz lub zadzwoń do nas.
               Chętnie odpowiemy na wszystkie pytania.
             </p>
 

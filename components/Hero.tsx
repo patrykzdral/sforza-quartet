@@ -120,6 +120,16 @@ export default function Hero() {
                             <span className="text-gold-400/80">Elegancja, pasja i perfekcja</span> w każdej nucie.
                         </p>
                     </motion.div>
+
+                    <motion.a
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1.5 }}
+                        href="#contact"
+                        className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-400 text-black font-medium uppercase tracking-widest hover:shadow-[0_0_40px_rgba(139,115,85,0.5)] hover:scale-[1.02] transition-all duration-300 rounded-full mt-8"
+                    >
+                        Skontaktuj się z nami
+                    </motion.a>
                 </motion.div>
 
                 {/* Scroll indicator */}
