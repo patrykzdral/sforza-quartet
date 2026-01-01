@@ -35,22 +35,32 @@ export default function Multimedia() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 px-6 md:px-12">
-                <div className="container mx-auto max-w-5xl">
+            <section className="relative pt-32 pb-20 px-6 md:px-12 overflow-hidden">
+                {/* Background decoration */}
+                <div className="absolute inset-0 pointer-events-none">
+                    <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-gold-500/5 blur-3xl" />
+                </div>
+
+                <div className="container mx-auto max-w-5xl relative">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <Link
                             href="/"
-                            className="relative z-10 inline-flex items-center justify-center gap-3 px-6 py-3 border border-gold-500 text-gold-500 font-medium uppercase tracking-widest hover:bg-gold-500 hover:text-black transition-colors rounded mb-8"
+                            className="inline-flex items-center justify-center gap-3 px-6 py-3 btn-premium text-gold-500 font-medium uppercase tracking-widest rounded-full mb-8"
                         >
                             <ArrowLeft size={18} /> Powrót
                         </Link>
 
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="h-px w-12 bg-gradient-to-r from-gold-500 to-transparent" />
+                            <span className="gradient-text uppercase tracking-[0.3em] text-sm font-medium">Galeria</span>
+                        </div>
+
                         <h1 className="text-4xl md:text-6xl font-serif mb-6">
-                            Multimedia
+                            <span className="text-gold-500">Multi</span>media
                         </h1>
 
                         <p className="text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
@@ -61,20 +71,25 @@ export default function Multimedia() {
             </section>
 
             {/* Videos Section */}
-            <section className="py-20 px-6 md:px-12 bg-neutral-900">
-                <div className="container mx-auto max-w-5xl">
+            <section className="relative py-12 px-6 md:px-12 bg-neutral-900/50 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none" />
+                <div className="absolute inset-0 noise-overlay pointer-events-none" />
+
+                <div className="container mx-auto max-w-5xl relative">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <div className="flex items-center gap-3 mb-10">
-                            <Play className="text-gold-500" size={28} />
+                            <div className="p-2 rounded-full glass border border-gold-500/30">
+                                <Play className="text-gold-500" size={24} />
+                            </div>
                             <h2 className="text-2xl md:text-3xl font-serif">Nagrania wideo</h2>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid md:grid-cols-2 gap-8">
                             {videos.map((video, index) => (
                                 <motion.div
                                     key={index}
@@ -82,7 +97,7 @@ export default function Multimedia() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                                    className="bg-black/50 border border-neutral-800 hover:border-gold-500/30 transition-all duration-300 rounded-lg overflow-hidden group"
+                                    className="card-modern rounded-xl overflow-hidden group"
                                 >
                                     <div className="relative aspect-video">
                                         <iframe
@@ -109,13 +124,15 @@ export default function Multimedia() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 px-6 md:px-12 bg-black border-t border-neutral-800">
-                <div className="container mx-auto max-w-5xl text-center">
+            <section className="relative py-10 px-6 md:px-12 bg-black overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent" />
+
+                <div className="container mx-auto max-w-5xl text-center relative">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
                     >
                         <p className="text-xl text-gray-300 font-light max-w-3xl mx-auto mb-8">
                             Chcesz zobaczyć więcej? Odwiedź nasze profile społecznościowe
@@ -123,7 +140,7 @@ export default function Multimedia() {
                         </p>
                         <Link
                             href="/#contact"
-                            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold-500 text-black font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors rounded"
+                            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-400 text-black font-medium uppercase tracking-widest hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all duration-300 rounded-full"
                         >
                             Skontaktuj się z nami
                         </Link>

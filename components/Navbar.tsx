@@ -117,11 +117,11 @@ export default function Navbar() {
 
                     {/* Center column - Logo (always centered) */}
                     <Link href="/" className="z-50 group flex flex-col items-center justify-center flex-shrink-0 pointer-events-auto">
-                        <div className="relative font-serif text-5xl md:text-6xl text-gold-500 flex items-center justify-center h-16 w-16">
-                            <span className="absolute transform translate-x-[-8px] group-hover:translate-x-[-12px] transition-transform duration-500">S</span>
-                            <span className="absolute transform translate-x-[8px] group-hover:translate-x-[12px] transition-transform duration-500 z-10 text-white/90 mix-blend-overlay">Q</span>
+                        <div className="relative font-serif text-3xl md:text-4xl text-gold-500 flex items-center justify-center h-12 w-16">
+                            <span className="absolute transform translate-x-[-6px] group-hover:translate-x-[-9px] transition-transform duration-500 text-glow-gold">S</span>
+                            <span className="absolute transform translate-x-[6px] group-hover:translate-x-[9px] transition-transform duration-500 z-10 text-white/80">Q</span>
                         </div>
-                        <span className="text-[0.6rem] uppercase tracking-[0.3em] text-white/60 mt-1 hidden md:block group-hover:text-gold-500 transition-colors">Sforza Quartet</span>
+                        <span className="text-[0.55rem] uppercase tracking-[0.35em] text-white/50 mt-0.5 hidden md:block group-hover:text-gold-500/80 transition-colors duration-300">Sforza Quartet</span>
                     </Link>
 
                     {/* Right column - Links on desktop, empty space on mobile for balance */}
