@@ -193,7 +193,7 @@ export default function ChurchWeddings() {
                                     2500 zł*
                                 </p>
                                 <p className="text-sm text-gray-500 mt-6 italic">
-                                    *W cenie zawarty dojazd do 60 km od Wrocławia. Powyżej 60 km od Wrocławia zostanie doliczona opłata za dojazd.
+                                    *Dojazd do 60 km od Wrocławia jest wliczony w cenę, a poza tym zakresem naliczana jest opłata.
                                 </p>
                             </div>
 
