@@ -60,7 +60,7 @@ export default function Navbar() {
                     <div className="flex-1 flex justify-start">
                         <button
                             className="md:hidden text-white z-50 pointer-events-auto"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aw
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
                             {isMobileMenuOpen ? <X /> : <Menu />}
                         </button>
