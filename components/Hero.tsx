@@ -143,7 +143,7 @@ export default function Hero() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 2 }}
                     onClick={scrollToAbout}
-                    className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 hover:text-gold-500 transition-colors duration-500 cursor-pointer group"
+                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 hover:text-gold-500 transition-colors duration-500 cursor-pointer group"
                 >
                     <span className="text-xs uppercase tracking-[0.3em] font-light">Odkryj więcej</span>
                     <motion.div
