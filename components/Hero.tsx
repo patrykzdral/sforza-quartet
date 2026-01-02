@@ -99,64 +99,21 @@ export default function Hero() {
                     </h1>
 
                     {/* Fancy Kwartet smyczkowy badge */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1.2, delay: 1.2, ease: [0.23, 1, 0.32, 1] }}
-                        className="flex items-center justify-center gap-4 pt-2"
-                    >
-                        <motion.div
-                            initial={{ width: 0 }}
-                            animate={{ width: 60 }}
-                            transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
-                            className="h-px bg-gradient-to-r from-transparent via-gold-500 to-gold-500"
+                    <div className="flex items-center justify-center gap-4 pt-2">
+                        <div
+                            className="h-px w-[60px] bg-gradient-to-r from-transparent via-gold-500 to-gold-500"
                         />
-                        <motion.div
-                            initial={{ opacity: 0, rotate: -180 }}
-                            animate={{ opacity: 1, rotate: 0 }}
-                            transition={{ duration: 1.2, delay: 1.5, ease: "easeOut" }}
-                            className="relative"
-                        >
+                        <div className="relative">
                             <span className="text-gold-400 text-sm md:text-base uppercase tracking-[0.35em] font-light px-4 py-2 border border-gold-500/30 rounded-full bg-gold-500/5 backdrop-blur-sm inline-flex items-center gap-2">
-                                <motion.span
-                                    animate={{
-                                        scale: [1, 1.2, 1],
-                                        opacity: [0.7, 1, 0.7]
-                                    }}
-                                    transition={{
-                                        duration: 2,
-                                        repeat: Infinity,
-                                        ease: "easeInOut"
-                                    }}
-                                    className="text-gold-500"
-                                >
-                                    ✦
-                                </motion.span>
+                                <span className="text-gold-500">✦</span>
                                 Kwartet smyczkowy
-                                <motion.span
-                                    animate={{
-                                        scale: [1, 1.2, 1],
-                                        opacity: [0.7, 1, 0.7]
-                                    }}
-                                    transition={{
-                                        duration: 2,
-                                        repeat: Infinity,
-                                        ease: "easeInOut",
-                                        delay: 0.5
-                                    }}
-                                    className="text-gold-500"
-                                >
-                                    ✦
-                                </motion.span>
+                                <span className="text-gold-500">✦</span>
                             </span>
-                        </motion.div>
-                        <motion.div
-                            initial={{ width: 0 }}
-                            animate={{ width: 60 }}
-                            transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
-                            className="h-px bg-gradient-to-l from-transparent via-gold-500 to-gold-500"
+                        </div>
+                        <div
+                            className="h-px w-[60px] bg-gradient-to-l from-transparent via-gold-500 to-gold-500"
                         />
-                    </motion.div>
+                    </div>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
