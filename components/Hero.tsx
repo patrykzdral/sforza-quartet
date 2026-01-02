@@ -78,16 +78,7 @@ export default function Hero() {
                     transition={{ duration: 1.2, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
                     className="space-y-6"
                 >
-                    <motion.h2
-                        initial={{ opacity: 0, letterSpacing: '0.2em' }}
-                        animate={{ opacity: 1, letterSpacing: '0.4em' }}
-                        transition={{ duration: 1.5, delay: 0.6 }}
-                        className="text-gold-500 text-sm md:text-base uppercase font-light"
-                    >
-                        Kwartet smyczkowy
-                    </motion.h2>
-
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-white tracking-tight overflow-visible pb-6 leading-[1.2]">
+                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-white tracking-tight overflow-visible pb-2 leading-[1.2]">
                         <motion.span
                             initial={{ opacity: 0, x: -30 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -107,6 +98,66 @@ export default function Hero() {
                         </motion.span>
                     </h1>
 
+                    {/* Fancy Kwartet smyczkowy badge */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.2, delay: 1.2, ease: [0.23, 1, 0.32, 1] }}
+                        className="flex items-center justify-center gap-4 pt-2"
+                    >
+                        <motion.div
+                            initial={{ width: 0 }}
+                            animate={{ width: 60 }}
+                            transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
+                            className="h-px bg-gradient-to-r from-transparent via-gold-500 to-gold-500"
+                        />
+                        <motion.div
+                            initial={{ opacity: 0, rotate: -180 }}
+                            animate={{ opacity: 1, rotate: 0 }}
+                            transition={{ duration: 1.2, delay: 1.5, ease: "easeOut" }}
+                            className="relative"
+                        >
+                            <span className="text-gold-400 text-sm md:text-base uppercase tracking-[0.35em] font-light px-4 py-2 border border-gold-500/30 rounded-full bg-gold-500/5 backdrop-blur-sm inline-flex items-center gap-2">
+                                <motion.span
+                                    animate={{
+                                        scale: [1, 1.2, 1],
+                                        opacity: [0.7, 1, 0.7]
+                                    }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: "easeInOut"
+                                    }}
+                                    className="text-gold-500"
+                                >
+                                    ✦
+                                </motion.span>
+                                Kwartet smyczkowy
+                                <motion.span
+                                    animate={{
+                                        scale: [1, 1.2, 1],
+                                        opacity: [0.7, 1, 0.7]
+                                    }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        delay: 0.5
+                                    }}
+                                    className="text-gold-500"
+                                >
+                                    ✦
+                                </motion.span>
+                            </span>
+                        </motion.div>
+                        <motion.div
+                            initial={{ width: 0 }}
+                            animate={{ width: 60 }}
+                            transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
+                            className="h-px bg-gradient-to-l from-transparent via-gold-500 to-gold-500"
+                        />
+                    </motion.div>
+
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -121,15 +172,12 @@ export default function Hero() {
                         </p>
                     </motion.div>
 
-                    <motion.a
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 1.5 }}
+                    <a
                         href="#contact"
                         className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-400 text-black font-medium uppercase tracking-widest hover:shadow-[0_0_40px_rgba(139,115,85,0.5)] hover:scale-[1.02] transition-all duration-300 rounded-full mt-8"
                     >
                         Skontaktuj się z nami
-                    </motion.a>
+                    </a>
                 </motion.div>
 
                 {/* Scroll indicator */}
