@@ -78,15 +78,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 items-start">
 
             {/* Agata Doszczak */}
-            <div className="group relative overflow-hidden rounded-xl card-modern h-full">
+            <div className="group relative overflow-hidden rounded-3xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-3xl">
                     <Image
                       src="/images/Agata_Doszczak.svg"
                       alt="Agata Doszczak"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-3xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -105,15 +105,15 @@ export default function Home() {
             </div>
 
             {/* Pola Czyżewska-Grylak */}
-            <div className="group relative overflow-hidden rounded-xl card-modern h-full">
+            <div className="group relative overflow-hidden rounded-3xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-3xl">
                     <Image
                       src="/images/Pola_Czyzewska_Grylak.svg"
                       alt="Pola Czyżewska-Grylak"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-3xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -132,15 +132,15 @@ export default function Home() {
             </div>
 
             {/* Agata Graczyk */}
-            <div className="group relative overflow-hidden rounded-xl card-modern h-full">
+            <div className="group relative overflow-hidden rounded-3xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-3xl">
                     <Image
                       src="/images/Agata_Graczyk.svg"
                       alt="Agata Graczyk"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-3xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
@@ -161,15 +161,15 @@ export default function Home() {
 
 
             {/* Ewelina Lachowska */}
-            <div className="group relative overflow-hidden rounded-xl card-modern h-full">
+            <div className="group relative overflow-hidden rounded-3xl card-modern h-full">
               <div className="flex flex-col sm:flex-row sm:items-start h-full">
                 <div className="flex flex-col flex-shrink-0 w-full sm:w-48 sm:mt-14">
-                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-xl">
+                  <div className="relative w-full h-64 sm:h-48 sm:w-48 overflow-hidden bg-neutral-900/50 flex items-center justify-center rounded-3xl">
                     <Image
                       src="/images/Ewelina_Lachowska.svg"
                       alt="Ewelina Lachowska"
                       fill
-                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-xl"
+                      className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700 rounded-3xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none" />
                   </div>
