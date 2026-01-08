@@ -13,9 +13,54 @@ const lato = Lato({
   variable: "--font-lato",
 });
 
+const baseUrl = 'https://sforza-quartet.pl';
+
 export const metadata: Metadata = {
-  title: "Kwartet smyczkowy - Wrocław - Sforza Quartet",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Kwartet smyczkowy - Wrocław - Sforza Quartet",
+    template: "%s | Sforza Quartet",
+  },
   description: "Profesjonalny kwartet smyczkowy z Wrocławia oferujący ekskluzywną oprawę muzyczną ślubów, bankietów, koncertów i imprez okolicznościowych.",
+  keywords: [
+    "kwartet smyczkowy",
+    "kwartet smyczkowy Wrocław",
+    "muzyka na ślub",
+    "oprawa muzyczna wesela",
+    "kwartet na bankiet",
+    "muzyka klasyczna Wrocław",
+    "Sforza Quartet",
+  ],
+  authors: [{ name: "Sforza Quartet" }],
+  creator: "Sforza Quartet",
+  publisher: "Sforza Quartet",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "pl_PL",
+    url: baseUrl,
+    siteName: "Sforza Quartet",
+    title: "Kwartet smyczkowy - Wrocław - Sforza Quartet",
+    description: "Profesjonalny kwartet smyczkowy z Wrocławia oferujący ekskluzywną oprawę muzyczną ślubów, bankietów, koncertów i imprez okolicznościowych.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
