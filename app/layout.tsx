@@ -42,6 +42,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: baseUrl,
   },
+  manifest: '/manifest.json',
   openGraph: {
     type: "website",
     locale: "pl_PL",
@@ -49,6 +50,14 @@ export const metadata: Metadata = {
     siteName: "Sforza Quartet",
     title: "Kwartet smyczkowy - Wrocław - Sforza Quartet",
     description: "Profesjonalny kwartet smyczkowy z Wrocławia oferujący ekskluzywną oprawę muzyczną ślubów, bankietów, koncertów i imprez okolicznościowych.",
+    images: [
+      {
+        url: '/images/quartet.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Sforza Quartet - Profesjonalny kwartet smyczkowy z Wrocławia',
+      },
+    ],
   },
   robots: {
     index: true,
